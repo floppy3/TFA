@@ -1,5 +1,35 @@
-$c-bg: #efefef;
-$c-alt: #e41612;
-$c-text: #444;
+:root{
 
-$size-text: 18px;
+    /* COLORS */
+    $c-bg: #FDFCFC;
+    /* $c-alt: #e41612; */
+    $c-text: #0D0D0D;
+    $c-primary: #0D0D0D;
+    $c-secondary: #404040;
+    $c-third: #8C8C8C;
+    $c-fourth: #BFBFBF;
+    $c-fifth: #F2F2F2;
+
+    /* TEXTS */
+    --legend:14px;
+    --text: 18px;
+    --textbig: 25px;
+    --subtitle: 35px;
+    --title: 44px;
+    --bigtitle: 55px;
+    --vbigtitle: 69px;
+}
+
+@media (min-width: 1050px){
+    :root{
+        --legend:16px;
+        --text: 22px;
+        --textbig: 31px;
+        --subtitle: 44px;
+        --title: 62px;
+        --bigtitle: 88px;
+        --vbigtitle: 175px;
+    }
+}
+
+
