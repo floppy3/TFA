@@ -202,4 +202,7 @@ body[data-menu] .menu__list {
 /* body[data-menu] .menu__el{
      transform:translateX(0);
     opacity: 1;
-} *//*# sourceMappingURL=app.css.map */
+} */
+.main {
+  margin: 0 24px;
+}/*# sourceMappingURL=app.css.map */
