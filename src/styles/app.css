@@ -1,7 +1,54 @@
 /* COLORS */
 /* $c-alt: #e41612; */
+/* MEDIA QUERIES */
 /* TEXTS */
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --legend: 12px;
+  --text: 18px;
+  --textbig: 25px;
+  --subtitle: 35px;
+  --title: 44px;
+  --bigtitle: 55px;
+  --vbigtitle: 69px;
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --legend: 16px;
+    --text: 22px;
+    --textbig: 31px;
+    --subtitle: 44px;
+    --title: 62px;
+    --bigtitle: 88px;
+    --vbigtitle: 175px;
+  }
+}
+/* COLORS */
+/* $c-alt: #e41612; */
+/* MEDIA QUERIES */
+/* TEXTS */
+:root {
+  --legend: 12px;
+  --text: 18px;
+  --textbig: 25px;
+  --subtitle: 35px;
+  --title: 44px;
+  --bigtitle: 55px;
+  --vbigtitle: 69px;
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --legend: 16px;
+    --text: 22px;
+    --textbig: 31px;
+    --subtitle: 44px;
+    --title: 62px;
+    --bigtitle: 88px;
+    --vbigtitle: 175px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +56,56 @@
 
 body {
   font-family: "Manrope", sans-serif;
-  font-size: 18px;
+  font-size: var(--text);
   font-weight: 300;
   line-height: 1.55;
   color: #0D0D0D;
   background-color: #FDFCFC;
 }
 
+.title {
+  font-size: var(--title);
+  font-weight: 600;
+  line-height: 1.2;
+}
+.title--big {
+  font-size: var(--bigtitle);
+  font-weight: 500;
+  line-height: 1.1;
+}
+.title--home {
+  font-size: var(--vbigtitle);
+  line-height: 1.15;
+}
+.title--little {
+  font-size: var(--subtitle);
+  line-height: 1.3;
+}
+.title span {
+  font-weight: 300;
+}
+
+.txt-bold {
+  font-weight: 500;
+}
+
+.text-big {
+  font-size: var(--textbig);
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.citation__author {
+  font-size: var(--legend);
+  font-style: normal;
+}
+
+@media (min-width: 1000px) {
+  body {
+    line-height: 1.6;
+  }
+  .title--home {
+    line-height: 1;
+  }
+}
 /* font-family: 'Caveat', cursive; *//*# sourceMappingURL=app.css.map */
