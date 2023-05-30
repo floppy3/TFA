@@ -15,6 +15,7 @@ body {
     color: $c-text;
   }
 }
+
 .title{
   font-size: var(--title);
   font-weight: 600;
@@ -36,14 +37,17 @@ body {
     font-weight: 300;
   }
 }
+
 .txt-bold{
   font-weight: 500;
 }
+
 .text-big{
   font-size: var(--textbig);
   font-weight: 400;
   line-height: 1.45;
 }
+
 .citation__author{
   font-size: var(--legend);
   font-style: normal;
