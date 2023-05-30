@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Manrope', sans-serif;
-  font-size: --text;
+  font-size: $size-text;
+  font-weight: 300;
   line-height: 1.55;
   color: $c-text;
   background-color: #FDFCFC;
 }
 
-.title {
-  color: $c-alt;
-}
 
 /* font-family: 'Caveat', cursive; */
