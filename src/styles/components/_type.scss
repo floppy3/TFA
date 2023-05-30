@@ -1,17 +1,19 @@
 @use '../utils/variables' as v;
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-}
 
 body {
   font-family: 'Manrope', sans-serif;
   font-size: var(--text);
   font-weight: 300;
   line-height: 1.55;
+  font-style: normal;
   color: $c-text;
   background-color: $c-bg;
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    color: $c-text;
+  }
 }
 .title{
   font-size: var(--title);
@@ -46,6 +48,19 @@ body {
   font-size: var(--legend);
   font-style: normal;
 }
+
+.menu{
+  &__logo{
+    font-family: 'Caveat', cursive; 
+    font-weight: 500;
+  }
+  &__el{
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+}
+
 @media (min-width: $q-desktop){
   body{
     line-height: 1.6;
@@ -53,6 +68,11 @@ body {
   .title{
     &--home{
       line-height: 1;
+    }
+  }
+  .menu{
+    &__el{
+      font-size: var(--legend);
     }
   }
 } 
