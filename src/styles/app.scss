@@ -4,7 +4,10 @@
 *{
     margin: 0;
     padding: 0;
-  }
+}
+html {
+	scroll-behavior: smooth;
+}
 ul{
     padding: 0;
     list-style: none;
@@ -72,6 +75,9 @@ li{
 body[data-menu] .menu__list {
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
+    @media (min-width: $q-desktop){
+        transform: none;
+    }
 }
 /* body[data-menu] .menu__el{
      transform:translateX(0);
