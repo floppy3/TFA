@@ -1,5 +1,6 @@
 @import 'utils/variables';
 @import 'components/type';
+@import 'components/grid';
 
 *{
     margin: 0;
@@ -18,7 +19,6 @@ li{
 .logo{
     width: 28px;
 }
-
 .menu{
     display: flex;
     padding: 21px 18px;
