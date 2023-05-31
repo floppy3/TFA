@@ -20,42 +20,68 @@ body {
   font-size: var(--title);
   font-weight: 600;
   line-height: 1.2;
+  margin-bottom: 35px;
   &--big{
     font-size: var(--bigtitle);
     font-weight: 500;
     line-height: 1.1;
+    margin-bottom: 54px;
   }
   &--home{
     font-size: var(--vbigtitle);
     line-height: 1.15;
+    margin: 72px 0 234px;
   }
   &--little{
     font-size: var(--subtitle);
     line-height: 1.3;
+    margin-bottom: 27px;
   }
   span{
     font-weight: 300;
   }
 }
 
-.txt-bold{
-  font-weight: 500;
+.section--solution .title--little:last-of-type{
+    font-weight: 300;
 }
 
-.text-big{
-  font-size: var(--textbig);
-  font-weight: 400;
-  line-height: 1.45;
+.txt{
+  max-width: 69ch;
+  margin-bottom: 1em;
+  &--bold{
+    font-weight: 500;
+  }
+  &--big{
+    font-size: var(--textbig);
+    font-weight: 400;
+    line-height: 1.45;
+  }
 }
-
-.citation__author{
-  font-size: var(--legend);
-  font-style: normal;
+.citation{
+  &__content{
+    font-family: 'Caveat', cursive;
+    font-size: var(--textbig);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  &__legend{
+    text-align: end;
+  }
+  &__author{
+    font-size: var(--legend);
+    font-style: normal;
+  }
+}
+details p{
+  font-size: 14px;
 }
 
 .menu{
   &__logo{
     font-family: 'Caveat', cursive; 
+    font-style: normal;
     font-weight: 500;
   }
   &__el{

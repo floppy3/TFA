@@ -21,7 +21,7 @@ li{
 
 .menu{
     display: flex;
-    padding: 20.5px 28px;
+    padding: 21px 28px;
     justify-content: space-between;
     background-color: rgba(253, 252, 252, 0.85);
     backdrop-filter: blur(1px);
@@ -86,4 +86,11 @@ body[data-menu] .menu__list {
 
 .main{
     margin: 0 24px;
+}
+
+.section{
+    padding-top: 99px;
+    &--context{
+    padding-top: 72px;
+  }
 }
