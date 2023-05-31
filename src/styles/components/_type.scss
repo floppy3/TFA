@@ -105,23 +105,63 @@ details p{
   }
 }
 
+.footer{
+  font-size: 17px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 18px;
+  .linkList{
+    display: flex;
+    margin-bottom: 18px;
+    &__el{
+      margin: 0 9px;
+    }
+  }
+}
+
 @media (min-width: $q-desktop){
+
   body{
     line-height: 1.6;
   }
+
   .title{
+    margin-bottom: 66px;
     &--home{
       line-height: 1;
+      margin: 88px 0 198px;
+    }
+    &--big{
+      margin-bottom: 88px;
+    }
+    &--little{
+      margin-bottom: 33px;
     }
   }
+
   .txt{
     &--big{
       font-size: var(--textbig);
     }
   }
+
   .menu{
     &__el{
       font-size: var(--legend);
+    }
+  }
+  .footer{
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 44px 88px;
+    .linkList{
+      margin-bottom: 0;
+      order: 2;
     }
   }
 } 
