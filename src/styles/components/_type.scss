@@ -53,9 +53,11 @@ body {
     font-weight: 500;
   }
   &--big{
-    font-size: var(--textbig);
+    font-size: 25px;
     font-weight: 400;
     line-height: 1.45;
+    margin-top: 90px;
+    margin-bottom: 108px;
   }
 }
 .citation{
@@ -72,6 +74,18 @@ body {
   &__author{
     font-size: var(--legend);
     font-style: normal;
+  }
+}
+.section{
+  &--context ul, .wrapper ul{
+    font-family: "Caveat", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--textbig);
+    line-height: 1.3;
+  }
+  &--context ul{
+    font-weight: 500;
   }
 }
 details p{
@@ -98,6 +112,11 @@ details p{
   .title{
     &--home{
       line-height: 1;
+    }
+  }
+  .txt{
+    &--big{
+      font-size: var(--textbig);
     }
   }
   .menu{
