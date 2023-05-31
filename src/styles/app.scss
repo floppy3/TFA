@@ -99,14 +99,33 @@ body[data-menu] .menu__list {
   }
 }
 
+.section--meet{
+    .citation{
+        margin-top: 45px;
+    }
+}
+
 
 
 
 
 /* IMG, SVG */
 
+.section--context ul:after{
+    content: "";
+    background-image: url(../assets/images/logo.svg);
+    background-repeat: no-repeat;
+    width: 258px;
+    height: 276px;
+    position: absolute;
+    right: -85px;
+    top: 46px;
+    z-index: 1;
+}
+
 .phone{
-    width: 278px;
+    width: 81.5%;
+    max-width: 316.58px;
     display: flex;
-    margin: 0 auto;
+    margin: 45px auto;
 }
