@@ -94,14 +94,31 @@ body[data-menu] .menu__list {
 
 .section{
     padding-top: 99px;
+
     &--context{
     padding-top: 72px;
-  }
-}
+    }
+    &--meet{
+        .citation{
+            margin-top: 45px;
+        }
+    }
 
-.section--meet{
-    .citation{
-        margin-top: 45px;
+    @media(min-width: $q-desktop){
+        padding-top: 88.19px;
+        &--context{
+            padding-top: 88px;
+            }
+        &--meet{
+            .citation{
+                margin-top: 45px;
+            }
+        }
+        &--meet{
+            div:last-of-type{
+                margin-left: 99px;
+            }
+        }
     }
 }
 

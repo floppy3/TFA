@@ -5,7 +5,7 @@
             grid-template-columns: 88px 2.2fr 88px 1.81fr 2.71fr 88px 3.2fr;
             grid-column-gap: 33px;
     }
-    .section--context>* {
+    .section> * {
         grid-column-start: 1;
     }
     

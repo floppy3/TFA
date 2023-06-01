@@ -103,7 +103,7 @@ body a {
   grid-row: 2;
 }
 
-.section--solution .title--little:last-of-type {
+.section--solution div:last-of-type .title--little:last-of-type {
   font-weight: 300;
 }
 
@@ -282,7 +282,7 @@ details p {
     grid-template-columns: 88px 2.2fr 88px 1.81fr 2.71fr 88px 3.2fr;
     grid-column-gap: 33px;
   }
-  .section--context > * {
+  .section > * {
     grid-column-start: 1;
   }
   .d-grid-start01 {
@@ -436,9 +436,22 @@ body[data-menu] .menu__list {
 .section--context {
   padding-top: 72px;
 }
-
 .section--meet .citation {
   margin-top: 45px;
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 88.19px;
+  }
+  .section--context {
+    padding-top: 88px;
+  }
+  .section--meet .citation {
+    margin-top: 45px;
+  }
+  .section--meet div:last-of-type {
+    margin-left: 99px;
+  }
 }
 
 /* IMG, SVG */
