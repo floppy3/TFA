@@ -91,7 +91,7 @@ body[data-menu] .menu__list {
     @media (min-width: $q-desktop){
         margin: 0 88px;
     }
-    @media (min-width: 1920px){
+    @media (min-width: 1980px){
         margin: 0 auto;
     }
 }
@@ -154,4 +154,23 @@ body[data-menu] .menu__list {
     max-width: 316.58px;
     display: flex;
     margin: 45px auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: $c-fourth;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    border: 0.5px solid $c-third;
 }
