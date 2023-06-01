@@ -111,16 +111,17 @@ body[data-menu] .menu__list {
 
 /* IMG, SVG */
 
-.section--context ul:after{
-    content: "";
+.section--context ul{
     background-image: url(../assets/images/logo.svg);
     background-repeat: no-repeat;
-    width: 258px;
-    height: 276px;
-    position: absolute;
-    right: -85px;
-    top: 46px;
-    z-index: 1;
+    background-size: 258px;
+    background-position: right -85px top 46px;
+    @media (min-width: $q-desktop){
+        background-image: url(../assets/images/logo.svg);
+        background-repeat: no-repeat;
+        background-size: 470px;
+        background-position: center;
+    }
 }
 
 .phone{

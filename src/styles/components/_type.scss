@@ -21,26 +21,36 @@ body {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 35px;
+  margin-left: -3px;
   &--big{
     font-size: var(--bigtitle);
     font-weight: 500;
     line-height: 1.1;
     margin-top: 135px;
     margin-bottom: 54px;
-  }
-  &--home{
-    font-size: var(--vbigtitle);
-    line-height: 1.15;
-    margin: 72px 0 234px;
+    margin-left: -2px;
   }
   &--little{
     font-size: var(--subtitle);
     line-height: 1.3;
     margin-top: 108px;
     margin-bottom: 27px;
+    margin-left: -1px;
   }
   span{
     font-weight: 300;
+  }
+  &--home{
+    font-size: var(--vbigtitle);
+    font-weight: 300;
+    line-height: 1.15;
+    text-transform: capitalize;
+    margin: 72px 0 234px;
+    margin-left: -4px;
+    span{
+      font-weight: 600;
+      grid-row: 2;
+    }
   }
 }
 
@@ -59,9 +69,11 @@ body {
     font-weight: 400;
     line-height: 1.45;
     text-align: center;
-    margin: 0 24px;
+    margin: 0 auto;
+    padding: 0 24px;
     margin-top: 90px;
     margin-bottom: 108px;
+    max-width: 49ch;
   }
 }
 .citation{
@@ -89,12 +101,10 @@ body {
     line-height: 1.3;
   }
   &--context ul{
-    position: relative;
     color: $c-secondary;
     font-weight: 500;
     margin: 126px -24px 0px;
     padding: 0px 24px;
-    overflow: hidden;
     li{
       margin-bottom: 54px;
       &:nth-child(2), &:nth-child(3){
@@ -103,8 +113,12 @@ body {
     }
   }
 }
-details p{
-  font-size: 14px;
+details{
+  font-weight: 500;
+  p{
+    font-size: 14px;
+    font-weight: 300;
+  }
 }
 
 .menu{
@@ -147,21 +161,58 @@ details p{
 
   .title{
     margin-bottom: 66px;
+    margin-left: -4px;
     &--home{
       line-height: 1;
       margin: 88px 0 198px;
+      margin-left: -11px;
     }
     &--big{
       margin-bottom: 88px;
+      text-indent: -4px;
     }
     &--little{
+      margin-top: 154px;
       margin-bottom: 33px;
+      margin-left: -2px;
     }
   }
 
   .txt{
+    margin-left: -1px;
     &--big{
       font-size: var(--textbig);
+      margin: 0 auto;
+    }
+  }
+
+  .section{
+    &--context ul{
+      font-size: 44px;
+      margin: 154px 0px 0px;
+      padding: 0px;
+      li{
+        margin-bottom: 54px;
+        &:nth-child(2), &:nth-child(3){
+          width: 100%;
+        }
+        &:nth-child(1){
+          grid-row: 1;
+          margin-bottom: 88px;
+        }
+        &:nth-child(2){
+          grid-row: 3;
+          margin-bottom: 44px;
+        }
+        &:nth-child(3){
+          grid-row: 2;
+          margin-bottom: 176px;
+        }
+        &:nth-child(4){
+          grid-row: 4;
+          margin-bottom: 154px;
+        }
+      }
     }
   }
 

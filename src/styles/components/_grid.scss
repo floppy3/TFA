@@ -1,5 +1,5 @@
 
-@media (min-width: 1050px){
+@media (min-width: 1200px){
     .grid{
         display: grid;
             grid-template-columns: 88px 2.2fr 88px 1.81fr 2.71fr 88px 3.2fr;
@@ -14,6 +14,9 @@
     }
     .d-grid-start02{
         grid-column-start: 2;
+    }
+    .d-grid-start03{
+        grid-column-start: 3;
     }
     .d-grid-start04{
         grid-column-start: 4;
