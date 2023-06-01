@@ -87,8 +87,12 @@ body[data-menu] .menu__list {
 
 .main{
     margin: 0 24px;
+    max-width: 1920px;
     @media (min-width: $q-desktop){
         margin: 0 88px;
+    }
+    @media (min-width: 1920px){
+        margin: 0 auto;
     }
 }
 
@@ -105,18 +109,22 @@ body[data-menu] .menu__list {
     }
 
     @media(min-width: $q-desktop){
-        padding-top: 88.19px;
+        padding-top: 198px;
         &--context{
-            padding-top: 88px;
+            padding-top: 88.19px;
             }
-        &--meet{
-            .citation{
-                margin-top: 45px;
+        &--meet, &--solution{
+            div:last-of-type{
+                margin-left: 99px;
+                margin-top: 187px;
             }
         }
         &--meet{
             div:last-of-type{
-                margin-left: 99px;
+                margin-top: 387px;
+            }
+            .citation{
+                margin-top: 45px;
             }
         }
     }
