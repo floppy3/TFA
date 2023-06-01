@@ -16,6 +16,7 @@ body {
   }
 }
 
+/* Titles */
 .title{
   font-size: var(--title);
   font-weight: 600;
@@ -58,6 +59,7 @@ body {
     font-weight: 300;
 }
 
+/* Texts */
 .txt{
   max-width: 69ch;
   margin-bottom: 1em;
@@ -74,6 +76,9 @@ body {
     margin-top: 90px;
     margin-bottom: 108px;
     max-width: 49ch;
+  }
+  &--short{
+    max-width: 48ch;
   }
 }
 .citation{
@@ -92,6 +97,7 @@ body {
     font-style: normal;
   }
 }
+
 .section{
   &--context ul, .wrapper ul{
     font-family: "Caveat", cursive;
@@ -121,6 +127,7 @@ details{
   }
 }
 
+/*Menu*/
 .menu{
   &__logo{
     font-family: 'Caveat', cursive; 
@@ -134,6 +141,7 @@ details{
   }
 }
 
+/*Footer*/
 .footer{
   font-size: 17px;
   font-weight: 200;
@@ -152,6 +160,7 @@ details{
     }
   }
 }
+
 
 @media (min-width: $q-desktop){
 
