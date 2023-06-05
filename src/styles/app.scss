@@ -16,6 +16,9 @@ ul{
 li{
     list-style-type: none;
 }
+
+/* NAV */
+
 .logo{
     width: 28px;
 }
@@ -99,6 +102,7 @@ body[data-menu] .menu__list {
     }
 }
 
+/* margin section + col 2 margin + margin citation */
 .section{
     padding-top: 99px;
 
@@ -118,7 +122,6 @@ body[data-menu] .menu__list {
             }
         &--meet, &--solution{
             div:last-of-type{
-                margin-left: 99px;
                 margin-top: 187px;
             }
         }
@@ -129,6 +132,29 @@ body[data-menu] .menu__list {
             .citation{
                 margin-top: 45px;
             }
+        }
+    }
+}
+
+/* Wrapper */ 
+.wrapper{
+    overflow-x: scroll;
+    /* -webkit-overflow-scrolling: touch; à voir ? */
+    margin: 0px -88px;
+    padding: 0px 88px;
+    ul{
+        display: flex;
+        width: fit-content;
+        margin: 44px 0px 110px;
+        
+        li{
+            border: 2px solid $c-third;
+            border-radius: 30px;
+            width: 14em;
+            height: fit-content;
+            min-height: 2em;
+            padding: 1em 1em;
+            margin: 0px 22px;
         }
     }
 }
@@ -159,6 +185,8 @@ body[data-menu] .menu__list {
     margin: 45px auto;
 }
 
+
+/* SCROLLBAR */
 
 ::-webkit-scrollbar {
     width: 10px;

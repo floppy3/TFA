@@ -49,4 +49,12 @@
     .d-grid-end{
         grid-column-end: -1;
     }
+
+    /* Special section show */
+    .d-grid-show-t{
+        grid-row-start: 3;
+    }
+    .d-grid-show-p{
+        grid-row-start: 4;
+    }
 }

@@ -50,6 +50,7 @@ body {
     margin-left: -4px;
     span{
       font-weight: 600;
+      margin-left: 31px;
       grid-row: 2;
     }
   }
@@ -80,7 +81,12 @@ body {
   &--short{
     max-width: 48ch;
   }
+  &--end{
+    margin-top: 26px;
+  }
 }
+
+/* Citations */
 .citation{
   &__content{
     font-family: 'Caveat', cursive;
@@ -97,6 +103,7 @@ body {
     font-style: normal;
   }
 }
+
 
 .section{
   &--context ul, .wrapper ul{
@@ -119,6 +126,7 @@ body {
     }
   }
 }
+
 details{
   font-weight: 500;
   p{
@@ -165,6 +173,7 @@ details{
   }
 }
 
+/* Responsive */
 
 @media (min-width: $q-desktop){
 
@@ -179,6 +188,9 @@ details{
       line-height: 1;
       margin: 88px 0 198px;
       margin-left: -11px;
+      span{
+        margin-left: 0;
+      }
     }
     &--big{
       margin-bottom: 88px;
@@ -197,8 +209,13 @@ details{
       font-size: var(--textbig);
       margin: 0 auto;
     }
+    &--end{
+      margin-top: 88px;
+    }
   }
-
+  .col-2{
+    margin-left: 66px;
+  }
   .section{
     &--context ul{
       font-size: 44px;
@@ -246,4 +263,3 @@ details{
   }
 } 
 
-/* font-family: 'Caveat', cursive; */
