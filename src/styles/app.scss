@@ -1,6 +1,7 @@
 @import 'utils/variables';
 @import 'components/type';
 @import 'components/grid';
+@import 'components/js-el';
 
 *{
     margin: 0;
@@ -135,32 +136,6 @@ body[data-menu] .menu__list {
         }
     }
 }
-
-/* Wrapper */ 
-.wrapper{
-    overflow-x: scroll;
-    /* -webkit-overflow-scrolling: touch; à voir ? */
-    margin: 0px -88px;
-    padding: 0px 88px;
-    ul{
-        display: flex;
-        width: fit-content;
-        margin: 44px 0px 110px;
-        
-        li{
-            border: 2px solid $c-third;
-            border-radius: 30px;
-            width: 14em;
-            height: fit-content;
-            min-height: 2em;
-            padding: 1em 1em;
-            margin: 0px 22px;
-        }
-    }
-}
-
-
-
 
 
 /* IMG, SVG */

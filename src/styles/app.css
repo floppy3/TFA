@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* COLORS */
 /* $c-alt: #e41612; */
 /* MEDIA QUERIES */
@@ -100,6 +101,7 @@ body a {
 }
 .title--home span {
   font-weight: 600;
+  margin-left: 31px;
   grid-row: 2;
 }
 
@@ -129,7 +131,11 @@ body a {
 .txt--short {
   max-width: 48ch;
 }
+.txt--end {
+  margin-top: 26px;
+}
 
+/* Citations */
 .citation__content {
   font-family: "Caveat", cursive;
   font-size: var(--textbig);
@@ -183,6 +189,10 @@ details p {
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+  -webkit-transition: 0.2s;
+}
+.menu__el--active {
+  border-bottom: 1px solid #000000;
 }
 
 /*Footer*/
@@ -205,6 +215,7 @@ details p {
   margin: 0 9px;
 }
 
+/* Responsive */
 @media (min-width: 1200px) {
   body {
     line-height: 1.6;
@@ -217,6 +228,9 @@ details p {
     line-height: 1;
     margin: 88px 0 198px;
     margin-left: -11px;
+  }
+  .title--home span {
+    margin-left: 0;
   }
   .title--big {
     margin-bottom: 88px;
@@ -233,6 +247,12 @@ details p {
   .txt--big {
     font-size: var(--textbig);
     margin: 0 auto;
+  }
+  .txt--end {
+    margin-top: 88px;
+  }
+  .col-2 {
+    margin-left: 66px;
   }
   .section--context ul {
     font-size: 44px;
@@ -275,7 +295,6 @@ details p {
     order: 2;
   }
 }
-/* font-family: 'Caveat', cursive; */
 @media (min-width: 1200px) {
   .grid {
     display: grid;
@@ -324,7 +343,73 @@ details p {
   .d-grid-end {
     grid-column-end: -1;
   }
+  /* Special section show */
+  .d-grid-show-t {
+    grid-row-start: 3;
+  }
+  .d-grid-show-p {
+    grid-row-start: 4;
+  }
 }
+/* COLORS */
+/* $c-alt: #e41612; */
+/* MEDIA QUERIES */
+/* TEXTS */
+:root {
+  --legend: 12px;
+  --text: 18px;
+  --textbig: 28px;
+  --subtitle: 35px;
+  --title: 44px;
+  --bigtitle: 55px;
+  --vbigtitle: 69px;
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --legend: 16px;
+    --text: 22px;
+    --textbig: 31px;
+    --subtitle: 44px;
+    --title: 62px;
+    --bigtitle: 88px;
+    --vbigtitle: 175px;
+  }
+}
+/* Wrapper */
+.wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  /* -webkit-overflow-scrolling: touch; à voir ? */
+  margin: 0px -88px;
+  padding: 0px 88px;
+}
+.wrapper .cards {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 44px 0px 110px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.wrapper .cards.dragging {
+  cursor: grab;
+}
+.wrapper .cards__el {
+  border: 2px solid #8C8C8C;
+  border-radius: 30px;
+  width: 12em;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 2em;
+  padding: 1em 1em;
+  margin-right: 44px;
+}
+.wrapper .cards__el:last-child {
+  margin-right: 0px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -343,6 +428,7 @@ li {
   list-style-type: none;
 }
 
+/* NAV */
 .logo {
   width: 28px;
 }
@@ -423,13 +509,25 @@ body[data-menu] .menu__list {
 } */
 .main {
   margin: 0 24px;
+  max-width: 1920px;
 }
 @media (min-width: 1200px) {
   .main {
     margin: 0 88px;
   }
 }
+@media (min-width: 1600px) {
+  .main {
+    margin: 0 110px;
+  }
+}
+@media (min-width: 1980px) {
+  .main {
+    margin: 0 auto;
+  }
+}
 
+/* margin section + col 2 margin + margin citation */
 .section {
   padding-top: 99px;
 }
@@ -441,16 +539,19 @@ body[data-menu] .menu__list {
 }
 @media (min-width: 1200px) {
   .section {
-    padding-top: 88.19px;
+    padding-top: 198px;
   }
   .section--context {
-    padding-top: 88px;
+    padding-top: 88.19px;
+  }
+  .section--meet div:last-of-type, .section--solution div:last-of-type {
+    margin-top: 187px;
+  }
+  .section--meet div:last-of-type {
+    margin-top: 387px;
   }
   .section--meet .citation {
     margin-top: 45px;
-  }
-  .section--meet div:last-of-type {
-    margin-left: 99px;
   }
 }
 
@@ -475,4 +576,23 @@ body[data-menu] .menu__list {
   max-width: 316.58px;
   display: flex;
   margin: 45px auto;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BFBFBF;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 0.5px solid #8C8C8C;
 }/*# sourceMappingURL=app.css.map */
