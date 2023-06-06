@@ -1,9 +1,9 @@
 @use '../utils/variables' as v;
 
-/* Wrapper */ 
+
+/* Draggrable silder */ 
 .wrapper{
     width: 100%;
-    /* -webkit-overflow-scrolling: touch; à voir ? */
     margin: 0px -24px;
     padding: 0px 24px;
     overflow: hidden;
@@ -31,14 +31,52 @@
     @media (min-width: $q-desktop){
         margin: 0px -88px;
         padding: 0px 88px;
-        .cards{
-            display: flex;
-            width: fit-content;
+        .cards{           
             margin: 44px 0px 110px;
             &__el{
                 border: 2px solid $c-third;
                 border-radius: 30px;
                 width: 334px;
+                padding: 33px 44px;
+                margin-right: 33px;
+            }
+        }
+    }
+}
+.wrapper-2{
+    width: 100%;
+    margin: 0px -24px;
+    padding: 0px 24px;
+    overflow: hidden;
+    &__container{
+        display: flex;
+        width: fit-content;
+        margin: 27px 0px 0px;
+        cursor: pointer;
+        &.dragging{
+            cursor: grab;
+        }
+        .citation{
+            border: 1px solid $c-third;
+            border-radius: 26px;
+            width: 14em;
+            height: fit-content;
+            padding: 24px 24px;
+            margin-right: 24px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    @media (min-width: $q-desktop){
+        margin: 0px -88px;
+        padding: 0px 88px;
+        &__container{
+            margin: 66px 0px 0px;
+            .citation{
+                border: 2px solid $c-third;
+                border-radius: 30px;
+                width: 400px;
                 padding: 33px 44px;
                 margin-right: 33px;
             }

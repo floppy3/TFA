@@ -82,4 +82,43 @@ const move = (e) => {
 	slider.addEventListener('touchend', end);
 })();
 
+// slider2 
+let isDown2 = false;
+let startX2;
+let scrollLeft2;
+const slider2 = document.querySelector('.wrapper-2');
+
+const end2 = () => {
+	isDown2 = false;
+  slider2.classList.remove('dragging');
+}
+
+const start2 = (e) => {
+  isDown2 = true;
+  slider2.classList.add('dragging');
+  startX2 = e.pageX || e.touches[0].pageX - slider2.offsetLeft;
+  scrollLeft2 = slider2.scrollLeft;	
+}
+
+const move2 = (e) => {
+	if(!isDown2) return;
+
+  e.preventDefault();
+  const x2 = e.pageX || e.touches[0].pageX - slider2.offsetLeft;
+  const dist2 = (x2 - startX2);
+  slider2.scrollLeft = scrollLeft2 - dist2;
+}
+
+(() => {
+	slider2.addEventListener('mousedown', start2);
+	slider2.addEventListener('touchstart', start2);
+
+	slider2.addEventListener('mousemove', move2);
+	slider2.addEventListener('touchmove', move2);
+
+	slider2.addEventListener('mouseleave', end2);
+	slider2.addEventListener('mouseup', end2);
+	slider2.addEventListener('touchend', end2);
+})();
+
 

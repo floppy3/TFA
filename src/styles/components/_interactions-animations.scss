@@ -1,0 +1,44 @@
+@use '../utils/variables' as v;
+
+/* Details */
+details{
+    position: relative;
+    border-bottom: 1px solid $c-fourth;
+    summary{
+      display: block;
+      padding: 18px 0px;
+      padding-right: 45px;
+      position: relative;
+      cursor: pointer;
+      &::marker {
+        display: none;
+        content: "";
+      }
+      &::after{
+        content: url(../assets/images/details_plus.svg);
+        position: absolute;
+        right: 0px;
+        top: 21px;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+    &[open] summary::after {
+      transform: rotate(45deg);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @media (min-width: $q-desktop) {
+            font-size: var(--text);
+            border-bottom: 2px solid $c-fourth;
+            summary{
+              padding: 22px 0px;
+              padding-right: 127px;
+              &::after{
+                content: url(../assets/images/details_plus_d.svg);
+                right: 29px;
+                top: 36px;
+                transition: transform 0.3s ease-in-out;
+              }
+            }
+    }
+  }
