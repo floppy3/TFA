@@ -47,7 +47,7 @@ window.onscroll = (()=> {
 let isDown = false;
 let startX;
 let scrollLeft;
-const slider = document.querySelector('.cards');
+const slider = document.querySelector('.wrapper');
 
 const end = () => {
 	isDown = false;
