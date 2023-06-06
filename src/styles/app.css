@@ -603,6 +603,7 @@ details summary::marker {
 details summary::after {
   content: url(../assets/images/details_plus.svg);
   position: absolute;
+  z-index: -1;
   right: 0px;
   top: 21px;
   transition: transform 0.3s ease-in-out;
@@ -628,6 +629,22 @@ details[open] summary::after {
   }
 }
 
+/* Animations */
+.esquisse .path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 1.4s cubic-bezier(0.29, 0.04, 0.8, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
