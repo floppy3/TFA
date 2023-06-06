@@ -94,6 +94,13 @@ body[data-menu] .menu__list {
 .main{
     margin: 0 24px;
     max-width: 1920px;
+    @media (min-width: $q-tablet1){
+        margin: 0 36px;
+    }
+    @media (min-width: $q-tablet2){
+        margin: 0 66px;
+    }
+
     @media (min-width: $q-desktop){
         margin: 0 88px;
     }
@@ -170,16 +177,82 @@ body[data-menu] .menu__list {
 
 /* IMG, SVG */
 
-.section--context ul{
-    background-image: url(../assets/images/logo.svg);
-    background-repeat: no-repeat;
-    background-size: 258px;
-    background-position: right -85px top 46px;
-    @media (min-width: $q-desktop){
+.section--context{
+    .title--home{
+        span{
+            width: fit-content;
+            position: relative;
+            z-index: -1;
+            /* &::after{
+                position: absolute;
+                content: "";
+                background-image: url(../assets/images/esquisse.svg);
+                background-repeat: no-repeat;
+                bottom: -99px;
+                right: 7px;
+                width: 260.82px;
+                height: 106.21px;
+                @media (min-width: $q-tablet1){
+                    bottom: -123px;
+                    right: 13px;
+                    width: 316.21px;
+                    height: 128.21px;
+                }
+                @media (min-width: $q-tablet2){
+                    bottom: -155px;
+                    right: 14px;
+                    width: 399.37px;
+                    height: 161.93px;
+                }
+                @media (min-width: $q-desktop){
+                    background-image: url(../assets/images/esquisse_d.svg);
+                    bottom: -167px;
+                    right: 28px;
+                    width: 538.94px;
+                    height: 218.52px;
+                }
+            } */
+        }
+    }
+    .esquisse{
+        position: absolute;
+                bottom: -99px;
+                right: 7px;
+                width: 260.82px;
+                height: 106.21px;
+                @media (min-width: $q-tablet1){
+                    bottom: -123px;
+                    right: 13px;
+                    width: 316.21px;
+                    height: 128.21px;
+                }
+                @media (min-width: $q-tablet2){
+                    bottom: -155px;
+                    right: 14px;
+                    width: 399.37px;
+                    height: 161.93px;
+                }
+                @media (min-width: $q-desktop){
+                    bottom: -244px;
+                    right: 84px;
+                    width: 538.94px;
+                    height: 218.52px;
+                }
+    }
+
+    ul{
         background-image: url(../assets/images/logo.svg);
         background-repeat: no-repeat;
-        background-size: 470px;
-        background-position: center;
+        background-size: 258px;
+        background-position: right -85px top 46px;
+        @media (min-width: $q-tablet1){
+            background-size: 303px;
+            background-position: right -85px top 27px;
+        }
+        @media (min-width: $q-desktop){
+            background-size: 470px;
+            background-position: center;
+        }
     }
 }
 
@@ -189,6 +262,8 @@ body[data-menu] .menu__list {
     display: flex;
     margin: 45px auto;
 }
+
+
 
 
 /* SCROLLBAR */
