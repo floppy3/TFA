@@ -163,7 +163,7 @@ body {
   margin-top: 0.5em;
 }
 
-
+/* ul context covid et wrapper */
 .section{
   &--context ul, .wrapper ul{
     font-family: "Caveat", cursive;
@@ -201,6 +201,24 @@ details{
     font-weight: 300;
     padding-bottom: 1em;
   }
+}
+
+/* Need problems count */ 
+.problem{
+    font-family: "Caveat", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--text);
+    line-height: 1.45;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 30ch;
+    &__text{
+      max-width: 30ch;
+    }
+    &__count{
+      font-size: var(--textbig);
+    }
 }
 
 /*Menu*/

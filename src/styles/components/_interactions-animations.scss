@@ -44,6 +44,17 @@ details{
     }
 }
 
+/* Besoins compteurs */ 
+.problems{
+  &__text{
+    position: relative;
+    &__img{
+      position: absolute;
+    }
+  }
+}
+
+
   /* Animations */ 
 
   .esquisse{
