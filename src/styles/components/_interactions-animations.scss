@@ -55,7 +55,7 @@ details{
     margin: 72px 0px 54px;
     .problem{
       margin-right: 9px;
-      &:nth-child(even){
+      &:nth-child(even) .problem__text{
         margin-top: 36px;
       }
       &__text{
@@ -157,6 +157,9 @@ details{
         }
 
         &__text{
+          &:nth-child(even){
+            margin-top: 0px;
+          }
           .problem__img{
             &--4{
               width: 98px;

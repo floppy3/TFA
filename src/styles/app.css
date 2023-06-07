@@ -905,7 +905,7 @@ details[open] summary::after {
 .container-problems .problems .problem {
   margin-right: 9px;
 }
-.container-problems .problems .problem:nth-child(even) {
+.container-problems .problems .problem:nth-child(even) .problem__text {
   margin-top: 36px;
 }
 .container-problems .problems .problem__text {
@@ -1006,6 +1006,9 @@ details[open] summary::after {
   }
   .container-problems .problems .problem--9 {
     margin-top: 90px;
+  }
+  .container-problems .problems .problem__text:nth-child(even) {
+    margin-top: 0px;
   }
   .container-problems .problems .problem__text .problem__img--4 {
     width: 98px;
