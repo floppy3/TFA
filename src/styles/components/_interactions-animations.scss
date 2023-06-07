@@ -45,90 +45,25 @@ details{
 }
 
 /* Besoins compteurs */ 
-
-.problems{
-
-  .problem{
-    &__text{
-      position: relative;
-      .problem__img{
-        position: absolute;
-        z-index: -1;
-        &--4{
-          width: 98px;
-          height: 107px;
-          top: -22px;
-          left: 33%;
-        }
-        &--5{
-          width: 118px;
-          height: 129px;
-          top: -33px;
-          left: 69px;
-        }
-        &--6{
-          width: 138px;
-          height: 151px;
-          top: -42px;
-          left: 56px;
-        }
-        &--7{
-          width: 158px;
-          height: 173px;
-          top: -54px;
-          left: 63px;
-        }
-      }
-    }
-    &__count{
-      margin-top: 1rem;
-    }
-    &:hover{
-      .problem__img{
-        path{
-          fill: $c-sixth;
-          transition-delay: .1s;
-        }
-      }
-      .problem__count{
-        opacity: 1;
-        transition-delay: .1s;
-      }
-    }
-  }
-  @media (min-width: $q-laptop){
-    margin: 132px 0px 46px;
+.container-problems{
+    overflow: hidden;
+    margin: 0px -24px;
+    padding: 0px 24px;
+  .problems{
+    display: flex;
+    width: fit-content;
+    margin: 72px 0px 54px;
     .problem{
-      &--1{
-        margin-top: 0px;
+      margin-right: 9px;
+      &:nth-child(even){
+        margin-top: 36px;
       }
-      &--2{
-        margin-top: 76px;
-      }
-      &--3{
-        margin-top: 0px;
-      }
-      &--4{
-        margin-top: 188px;
-      }
-      &--5{
-        margin-top: 112px;
-      }
-      &--6{
-        margin-top: 144px;
-      }
-      &--7{
-        margin-top: 146px;
-      }
-      &--8{
-        margin-top: 48px;
-      }
-      &--9{
-        margin-top: 90px;
-      }
-
       &__text{
+        width: 30ch;
+        position: relative;
         .problem__img{
+          position: absolute;
+          z-index: -1;
           &--4{
             width: 98px;
             height: 107px;
@@ -155,8 +90,103 @@ details{
           }
         }
       }
+      &__count{
+        margin-top: 1rem;
+      }
     }
+  }
+  @media (min-width: $q-tablet1){
+    margin: 0px -36px;
+    padding: 0px 36px;
+  }
+  @media (min-width: $q-tablet2){
+    margin: 0px -66px;
+    padding: 0px 66px;
+  }
+  @media (min-width: $q-laptop){
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    .problems{
+      width: 100%;
+      display: grid;
+      margin: 132px 0px 46px;
+      .problem{
+        margin: 0 auto;
+        &__count{
+          opacity: 0;
+        }
+        &:hover{
+          .problem__img{
+            path{
+              fill: $c-sixth;
+              transition-delay: .1s;
+            }
+          }
+          .problem__count{
+            opacity: 1;
+            transition-delay: .1s;
+          }
+        }
+        &--1{
+          margin-top: 0px;
+        }
+        &--2{
+          margin-top: 76px;
+        }
+        &--3{
+          margin-top: 0px;
+        }
+        &--4{
+          margin-top: 188px;
+        }
+        &--5{
+          margin-top: 112px;
+        }
+        &--6{
+          margin-top: 144px;
+        }
+        &--7{
+          margin-top: 146px;
+        }
+        &--8{
+          margin-top: 48px;
+        }
+        &--9{
+          margin-top: 90px;
+        }
 
+        &__text{
+          .problem__img{
+            &--4{
+              width: 98px;
+              height: 107px;
+              top: -22px;
+              left: 33%;
+            }
+            &--5{
+              width: 118px;
+              height: 129px;
+              top: -33px;
+              left: 69px;
+            }
+            &--6{
+              width: 138px;
+              height: 151px;
+              top: -42px;
+              left: 56px;
+            }
+            &--7{
+              width: 158px;
+              height: 173px;
+              top: -54px;
+              left: 63px;
+            }
+          }
+        }
+      }
+
+    }
   }
 }
 

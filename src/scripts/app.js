@@ -122,3 +122,43 @@ const move2 = (e) => {
 })();
 
 
+// scroll mobile problems count 
+let isDown3 = false;
+let startX3;
+let scrollLeft3;
+const slider3 = document.querySelector('.container-problems');
+
+const end3 = () => {
+	isDown3 = false;
+  slider3.classList.remove('dragging');
+}
+
+const start3 = (e) => {
+  isDown3 = true;
+  slider3.classList.add('dragging');
+  startX3 = e.pageX || e.touches[0].pageX - slider3.offsetLeft;
+  scrollLeft3 = slider3.scrollLeft;	
+}
+
+const move3 = (e) => {
+	if(!isDown3) return;
+
+  e.preventDefault();
+  const x3 = e.pageX || e.touches[0].pageX - slider3.offsetLeft;
+  const dist3 = (x3 - startX3);
+  slider3.scrollLeft = scrollLeft3 - dist3;
+}
+
+(() => {
+	slider3.addEventListener('mousedown', start3);
+	slider3.addEventListener('touchstart', start3);
+
+	slider3.addEventListener('mousemove', move3);
+	slider3.addEventListener('touchmove', move3);
+
+	slider3.addEventListener('mouseleave', end3);
+	slider3.addEventListener('mouseup', end3);
+	slider3.addEventListener('touchend', end3);
+})();
+
+

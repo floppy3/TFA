@@ -211,7 +211,6 @@ details{
     font-size: var(--text);
     line-height: 1.45;
     text-align: center;
-    margin: 0 auto;
     max-width: 30ch;
     &__text{
       max-width: 30ch;
@@ -220,7 +219,6 @@ details{
     &__count{
       font-size: var(--textbig);
       font-weight: 700;
-      opacity: 0;
       pointer-events: none;
     }
 }

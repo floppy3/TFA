@@ -27,7 +27,7 @@
     --vbigtitle: 175px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   :root {
     --legend: 16px;
     --textlittle: 21px;
@@ -66,7 +66,7 @@
     --vbigtitle: 175px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   :root {
     --legend: 16px;
     --textlittle: 21px;
@@ -290,7 +290,6 @@ details p {
   font-size: var(--text);
   line-height: 1.45;
   text-align: center;
-  margin: 0 auto;
   max-width: 30ch;
 }
 .problem__text {
@@ -300,7 +299,6 @@ details p {
 .problem__count {
   font-size: var(--textbig);
   font-weight: 700;
-  opacity: 0;
   pointer-events: none;
 }
 
@@ -488,7 +486,7 @@ details p {
     order: 2;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   .menu__el {
     font-size: var(--legend);
   }
@@ -527,7 +525,7 @@ details p {
     --vbigtitle: 175px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   :root {
     --legend: 16px;
     --textlittle: 21px;
@@ -639,7 +637,7 @@ details p {
     --vbigtitle: 175px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   :root {
     --legend: 16px;
     --textlittle: 21px;
@@ -657,16 +655,16 @@ details p {
   margin: 0px -24px;
   padding: 0px 24px;
   overflow: hidden;
+  cursor: pointer;
+}
+.wrapper.dragging {
+  cursor: grab;
 }
 .wrapper .cards {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
   margin: 27px 0px 54px;
-  cursor: pointer;
-}
-.wrapper .cards.dragging {
-  cursor: grab;
 }
 .wrapper .cards__el {
   border: 1px solid #8C8C8C;
@@ -712,10 +710,22 @@ details p {
     margin-right: 33px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   .wrapper {
     margin: 0px -88px;
     padding: 0px 88px;
+  }
+}
+@media (min-width: 1600px) {
+  .wrapper {
+    margin: 0px -110px;
+    padding: 0px 110px;
+  }
+}
+@media (min-width: 1800px) {
+  .wrapper {
+    margin: 0px -220px;
+    padding: 0px 220px;
   }
 }
 
@@ -724,16 +734,16 @@ details p {
   margin: 0px -24px;
   padding: 0px 24px;
   overflow: hidden;
+  cursor: pointer;
+}
+.wrapper-2.dragging {
+  cursor: grab;
 }
 .wrapper-2__container {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
   margin: 27px 0px 0px;
-  cursor: pointer;
-}
-.wrapper-2__container.dragging {
-  cursor: grab;
 }
 .wrapper-2__container .citation {
   border: 1px solid #8C8C8C;
@@ -777,10 +787,22 @@ details p {
     margin-right: 33px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   .wrapper-2 {
     margin: 0px -88px;
     padding: 0px 88px;
+  }
+}
+@media (min-width: 1600px) {
+  .wrapper-2 {
+    margin: 0px -110px;
+    padding: 0px 110px;
+  }
+}
+@media (min-width: 1800px) {
+  .wrapper-2 {
+    margin: 0px -220px;
+    padding: 0px 220px;
   }
 }
 
@@ -811,7 +833,7 @@ details p {
     --vbigtitle: 175px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   :root {
     --legend: 16px;
     --textlittle: 21px;
@@ -851,7 +873,7 @@ details[open] summary::after {
   transform: rotate(45deg);
   transition: transform 0.3s ease-in-out;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   details {
     font-size: var(--text);
     border-bottom: 2px solid #BFBFBF;
@@ -869,98 +891,141 @@ details[open] summary::after {
 }
 
 /* Besoins compteurs */
-.problems .problem__text {
+.container-problems {
+  overflow: hidden;
+  margin: 0px -24px;
+  padding: 0px 24px;
+}
+.container-problems .problems {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 72px 0px 54px;
+}
+.container-problems .problems .problem {
+  margin-right: 9px;
+}
+.container-problems .problems .problem:nth-child(even) {
+  margin-top: 36px;
+}
+.container-problems .problems .problem__text {
+  width: 30ch;
   position: relative;
 }
-.problems .problem__text .problem__img {
+.container-problems .problems .problem__text .problem__img {
   position: absolute;
   z-index: -1;
 }
-.problems .problem__text .problem__img--4 {
+.container-problems .problems .problem__text .problem__img--4 {
   width: 98px;
   height: 107px;
   top: -22px;
   left: 33%;
 }
-.problems .problem__text .problem__img--5 {
+.container-problems .problems .problem__text .problem__img--5 {
   width: 118px;
   height: 129px;
   top: -33px;
   left: 69px;
 }
-.problems .problem__text .problem__img--6 {
+.container-problems .problems .problem__text .problem__img--6 {
   width: 138px;
   height: 151px;
   top: -42px;
   left: 56px;
 }
-.problems .problem__text .problem__img--7 {
+.container-problems .problems .problem__text .problem__img--7 {
   width: 158px;
   height: 173px;
   top: -54px;
   left: 63px;
 }
-.problems .problem__count {
+.container-problems .problems .problem__count {
   margin-top: 1rem;
 }
-.problems .problem:hover .problem__img path {
-  fill: #E5E2F7;
-  transition-delay: 0.1s;
+@media (min-width: 540px) {
+  .container-problems {
+    margin: 0px -36px;
+    padding: 0px 36px;
+  }
 }
-.problems .problem:hover .problem__count {
-  opacity: 1;
-  transition-delay: 0.1s;
+@media (min-width: 650px) {
+  .container-problems {
+    margin: 0px -66px;
+    padding: 0px 66px;
+  }
 }
 @media (min-width: 1025px) {
-  .problems {
+  .container-problems {
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+  }
+  .container-problems .problems {
+    width: 100%;
+    display: grid;
     margin: 132px 0px 46px;
   }
-  .problems .problem--1 {
+  .container-problems .problems .problem {
+    margin: 0 auto;
+  }
+  .container-problems .problems .problem__count {
+    opacity: 0;
+  }
+  .container-problems .problems .problem:hover .problem__img path {
+    fill: #E5E2F7;
+    transition-delay: 0.1s;
+  }
+  .container-problems .problems .problem:hover .problem__count {
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+  .container-problems .problems .problem--1 {
     margin-top: 0px;
   }
-  .problems .problem--2 {
+  .container-problems .problems .problem--2 {
     margin-top: 76px;
   }
-  .problems .problem--3 {
+  .container-problems .problems .problem--3 {
     margin-top: 0px;
   }
-  .problems .problem--4 {
+  .container-problems .problems .problem--4 {
     margin-top: 188px;
   }
-  .problems .problem--5 {
+  .container-problems .problems .problem--5 {
     margin-top: 112px;
   }
-  .problems .problem--6 {
+  .container-problems .problems .problem--6 {
     margin-top: 144px;
   }
-  .problems .problem--7 {
+  .container-problems .problems .problem--7 {
     margin-top: 146px;
   }
-  .problems .problem--8 {
+  .container-problems .problems .problem--8 {
     margin-top: 48px;
   }
-  .problems .problem--9 {
+  .container-problems .problems .problem--9 {
     margin-top: 90px;
   }
-  .problems .problem__text .problem__img--4 {
+  .container-problems .problems .problem__text .problem__img--4 {
     width: 98px;
     height: 107px;
     top: -22px;
     left: 33%;
   }
-  .problems .problem__text .problem__img--5 {
+  .container-problems .problems .problem__text .problem__img--5 {
     width: 118px;
     height: 129px;
     top: -33px;
     left: 69px;
   }
-  .problems .problem__text .problem__img--6 {
+  .container-problems .problems .problem__text .problem__img--6 {
     width: 138px;
     height: 151px;
     top: -42px;
     left: 56px;
   }
-  .problems .problem__text .problem__img--7 {
+  .container-problems .problems .problem__text .problem__img--7 {
     width: 158px;
     height: 173px;
     top: -54px;
@@ -1067,7 +1132,7 @@ li {
     gap: 33px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   .menu__list {
     gap: 44px;
   }
@@ -1111,7 +1176,7 @@ body[data-menu] .menu__list {
     margin: 0 66px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   .main {
     margin: 0 88px;
   }
@@ -1121,7 +1186,12 @@ body[data-menu] .menu__list {
     margin: 0 110px;
   }
 }
-@media (min-width: 1980px) {
+@media (min-width: 1800px) {
+  .main {
+    margin: 0 220px;
+  }
+}
+@media (min-width: 1921px) {
   .main {
     margin: 0 auto;
   }
@@ -1217,7 +1287,7 @@ body[data-menu] .menu__list {
     height: 169.93px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   .section--context .esquisse {
     bottom: -244px;
     right: 84px;

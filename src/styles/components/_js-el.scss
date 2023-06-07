@@ -7,14 +7,14 @@
     margin: 0px -24px;
     padding: 0px 24px;
     overflow: hidden;
+    cursor: pointer;
+        &.dragging{
+            cursor: grab;
+        }
     .cards{
         display: flex;
         width: fit-content;
         margin: 27px 0px 54px;
-        cursor: pointer;
-        &.dragging{
-            cursor: grab;
-        }
         
         &__el{
             border: 1px solid $c-third;
@@ -60,20 +60,28 @@
         margin: 0px -88px;
         padding: 0px 88px;
     }
+    @media (min-width: 1600px){
+        margin: 0px -110px;
+        padding: 0px 110px;
+    }
+    @media (min-width: 1800px){
+        margin: 0px -220px;
+        padding: 0px 220px;
+    }
 }
 .wrapper-2{
     width: 100%;
     margin: 0px -24px;
     padding: 0px 24px;
     overflow: hidden;
+    cursor: pointer;
+        &.dragging{
+            cursor: grab;
+        }
     &__container{
         display: flex;
         width: fit-content;
         margin: 27px 0px 0px;
-        cursor: pointer;
-        &.dragging{
-            cursor: grab;
-        }
         .citation{
             border: 1px solid $c-third;
             border-radius: 26px;
@@ -113,5 +121,13 @@
     @media (min-width: $q-desktop2){
         margin: 0px -88px;
         padding: 0px 88px;
+    }
+    @media (min-width: 1600px){
+        margin: 0px -110px;
+        padding: 0px 110px;
+    }
+    @media (min-width: 1800px){
+        margin: 0px -220px;
+        padding: 0px 220px;
     }
 }
