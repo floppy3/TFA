@@ -110,6 +110,10 @@ body {
     margin-bottom: 108px;
     max-width: 49ch;
   }
+  &--little{
+    font-size: var(--textlittle);
+    margin-top: 1em;
+  }
   &--short{
     max-width: 48ch;
   }
@@ -126,6 +130,9 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.3;
+    @media (min-width: $q-desktop){
+      text-indent: -16px;
+    }
   }
   &__legend{
     text-align: end;
@@ -134,6 +141,26 @@ body {
     font-size: var(--legend);
     font-style: normal;
   }
+}
+.section--solution, .section--meet{
+  .citation{
+    @media (min-width: $q-tablet2){
+      text-indent: -16px;
+    }
+    @media (min-width: $q-desktop){
+      text-indent: -20px;
+    }
+}
+}
+
+/* Dt besoins fondamentaux */ 
+.dt{
+  font-size: var(--textbig);
+  font-family: 'Caveat', cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 0.5em;
 }
 
 
@@ -145,7 +172,7 @@ body {
     font-size: var(--textbig);
     line-height: 1.3;
   }
-  .wrapper ul, .citation__content{
+  .wrapper ul, .wrapper-2 .citation__content{
     font-size: 25px;
   }
   &--context ul{
@@ -167,7 +194,7 @@ body {
 
 /* Details */
 details{
-  font-size: 16px;
+  font-size:  var(--textlittle);
   font-weight: 500;
   z-index: -1;
   p{
@@ -190,6 +217,9 @@ details{
     -webkit-transition: 0.2s;
     &--active{
       border-bottom: 1px solid #000000;
+    }
+    @media (min-width: $q-desktop){
+      font-size: 15px;
     }
   }
 }
@@ -224,12 +254,14 @@ details{
   }
   .title--home{
     font-size: 86px;
+    margin-left: -7px;
   }
 }
 
 @media(min-width:$q-tablet2){
   .title--home{
     font-size: 107px;
+    margin-bottom: 270px;
   }
   .section{
     &--context ul{
@@ -237,6 +269,12 @@ details{
       padding: 0px 66px;
     }
   }
+}
+@media (min-width: $q-tablet3){
+  .title--home{
+    font-size: 124px;
+    margin-left: -8px;
+  }    
 }
 
 @media (min-width: $q-desktop){
@@ -249,10 +287,9 @@ details{
     margin-bottom: 66px;
     margin-left: -4px;
     &--home{
-      font-size: var(--vbigtitle);
+      font-size: 150px;
       line-height: 1;
-      margin: 88px 0 198px;
-      margin-left: -11px;
+      margin: 88px -10px 198px 0px;
       span{
         margin-left: 0;
       }
@@ -283,7 +320,7 @@ details{
   }
   .section{
     &--context ul{
-      font-size: 44px;
+      font-size: 36px;
       margin: 154px 0px 0px;
       padding: 0px;
       li{
@@ -316,12 +353,9 @@ details{
 
   details{
     font-size: var(--text);
-  }
-
-  .menu{
-    &__el{
-      font-size: var(--legend);
-    }
+    p{
+      font-size: var(--textlittle);
+      }
   }
   .footer{
     font-size: 16px;
@@ -334,4 +368,24 @@ details{
     }
   }
 } 
+
+@media (min-width: $q-desktop2){
+  .menu{
+    &__el{
+      font-size: var(--legend);
+    }
+  }
+
+  .title{
+    &--home{
+      font-size: var(--vbigtitle);
+      margin-left: -11px;
+    }
+  }
+  .section{
+    &--context ul{
+      font-size: 44px;
+    }
+  }
+}
 

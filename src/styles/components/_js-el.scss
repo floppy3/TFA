@@ -36,9 +36,11 @@
         margin: 0px -66px;
         padding: 0px 66px;
     }
+    @media (min-width: $q-tablet4){
+        margin: 0px -77px;
+        padding: 0px 77px;
+    }
     @media (min-width: $q-desktop){
-        margin: 0px -88px;
-        padding: 0px 88px;
         .cards{           
             margin: 44px 0px 110px;
             &__el{
@@ -49,6 +51,10 @@
                 margin-right: 33px;
             }
         }
+    }
+    @media (min-width: $q-desktop2){
+        margin: 0px -88px;
+        padding: 0px 88px;
     }
 }
 .wrapper-2{
@@ -84,9 +90,11 @@
         margin: 0px -66px;
         padding: 0px 66px;
     }
+    @media (min-width: $q-tablet4){
+        margin: 0px -77px;
+        padding: 0px 77px;
+    }
     @media (min-width: $q-desktop){
-        margin: 0px -88px;
-        padding: 0px 88px;
         &__container{
             margin: 66px 0px 0px;
             .citation{
@@ -97,5 +105,9 @@
                 margin-right: 33px;
             }
         }
+    }
+    @media (min-width: $q-desktop2){
+        margin: 0px -88px;
+        padding: 0px 88px;
     }
 }

@@ -11,12 +11,16 @@
     $q-mobile1: 412px;
     $q-tablet1: 540px;
     $q-tablet2: 650px;
-    $q-tablet3: 800px;
+    $q-tablet3: 730px;
+    $q-tablet4: 800px;
     $q-desktop: 1200px;
+    $q-desktop2: 1500px;
+
 
     /* TEXTS */
 :root{
     --legend: 12px;
+    --textlittle: 17px;
     --text: 18px;
     --textbig: 28px;
     --subtitle: 35px;
@@ -28,6 +32,19 @@
 @media (min-width: $q-desktop){
     :root{
         --legend: 16px;
+        --textlittle: 19px;
+        --text: 20px;
+        --textbig: 31px;
+        --subtitle: 44px;
+        --title: 62px;
+        --bigtitle: 88px;
+        --vbigtitle: 175px;
+    }
+}
+@media (min-width: $q-desktop2){
+    :root{
+        --legend: 16px;
+        --textlittle: 21px;
         --text: 22px;
         --textbig: 31px;
         --subtitle: 44px;

@@ -35,10 +35,11 @@ li{
     left: 0;
     right: 0;
     position: fixed;
+    z-index: 40;
     @media (min-width: $q-desktop){
         padding: 26.5px 44px;
     }
-
+    
     &__logo a{
         display: flex;
         align-items: center;
@@ -71,6 +72,9 @@ li{
             height: auto;
             left: 0;
             flex-direction: initial;
+            gap: 33px;
+        }
+        @media (min-width: $q-desktop2){
             gap: 44px;
         }
     }
@@ -100,8 +104,13 @@ body[data-menu] .menu__list {
     @media (min-width: $q-tablet2){
         margin: 0 66px;
     }
-
+    @media (min-width: $q-tablet4){
+        margin: 0 77px;
+    }
     @media (min-width: $q-desktop){
+        margin: 0 66px;
+    }
+    @media (min-width: $q-desktop2){
         margin: 0 88px;
     }
     @media (min-width: 1600px){
@@ -131,16 +140,25 @@ body[data-menu] .menu__list {
                 li{
                     list-style-type: none;
                     position: relative;
+                    z-index: -1;
                     &::before{
                         position: absolute;
                         content: "—";
-                        text-indent: -18px;
+                        text-indent: -18px;                      
                     }
                 }
             }
         }
     }
-
+    @media (min-width: $q-tablet2){
+        &--solution{
+            div:last-of-type{
+                ul{
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
     @media(min-width: $q-desktop){
         padding-top: 198px;
         &--context{
@@ -156,19 +174,23 @@ body[data-menu] .menu__list {
                 margin-top: 387px;
             }
             .citation{
-                margin-top: 45px;
+                margin: 44px 0px 0px;
             }
         }
         &--solution{
             div:last-of-type{
                 ul{
-                    padding-left: 0px;
                     li{
                         &::before{
                             text-indent: -25px;
                         }
                     }
                 }
+            }
+        }
+        &--conclusion{
+            .citation{
+                margin: 106px 0px 0px;
             }
         }
     }
@@ -183,35 +205,6 @@ body[data-menu] .menu__list {
             width: fit-content;
             position: relative;
             z-index: -1;
-            /* &::after{
-                position: absolute;
-                content: "";
-                background-image: url(../assets/images/esquisse.svg);
-                background-repeat: no-repeat;
-                bottom: -99px;
-                right: 7px;
-                width: 260.82px;
-                height: 106.21px;
-                @media (min-width: $q-tablet1){
-                    bottom: -123px;
-                    right: 13px;
-                    width: 316.21px;
-                    height: 128.21px;
-                }
-                @media (min-width: $q-tablet2){
-                    bottom: -155px;
-                    right: 14px;
-                    width: 399.37px;
-                    height: 161.93px;
-                }
-                @media (min-width: $q-desktop){
-                    background-image: url(../assets/images/esquisse_d.svg);
-                    bottom: -167px;
-                    right: 28px;
-                    width: 538.94px;
-                    height: 218.52px;
-                }
-            } */
         }
     }
     .esquisse{
@@ -233,6 +226,12 @@ body[data-menu] .menu__list {
                     height: 161.93px;
                 }
                 @media (min-width: $q-desktop){
+                    bottom: -182px;
+                    right: 88px;
+                    width: 414.37px;
+                    height: 169.93px;
+                }
+                @media (min-width: $q-desktop2){
                     bottom: -244px;
                     right: 84px;
                     width: 538.94px;
@@ -248,6 +247,18 @@ body[data-menu] .menu__list {
         @media (min-width: $q-tablet1){
             background-size: 303px;
             background-position: right -85px top 27px;
+        }
+        @media (min-width: $q-tablet2){
+            background-size: 362px;
+            background-position: right 1px top -6px;
+        }
+        @media (min-width: 780px){
+            background-size: 303px;
+            background-position: right 66px top 6px;
+        }
+        @media (min-width: $q-tablet4){
+            background-size: 303px;
+            background-position: right 66px top 6px;
         }
         @media (min-width: $q-desktop){
             background-size: 470px;

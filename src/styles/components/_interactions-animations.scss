@@ -8,6 +8,7 @@ details{
       padding: 18px 0px;
       padding-right: 45px;
       position: relative;
+      z-index: 0;
       cursor: pointer;
       &::marker {
         display: none;
@@ -27,19 +28,19 @@ details{
       transition: transform 0.3s ease-in-out;
     }
 
-    @media (min-width: $q-desktop) {
-            font-size: var(--text);
-            border-bottom: 2px solid $c-fourth;
-            summary{
-              padding: 22px 0px;
-              padding-right: 127px;
-              &::after{
-                content: url(../assets/images/details_plus_d.svg);
-                right: 29px;
-                top: 36px;
-                transition: transform 0.3s ease-in-out;
-              }
-            }
+    @media (min-width: $q-desktop2) {
+      font-size: var(--text);
+      border-bottom: 2px solid $c-fourth;
+      summary{
+        padding: 22px 0px;
+        padding-right: 127px;
+        &::after{
+          content: url(../assets/images/details_plus_d.svg);
+          right: 29px;
+          top: 36px;
+          transition: transform 0.3s ease-in-out;
+        }
+      }
     }
 }
 
