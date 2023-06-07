@@ -260,6 +260,10 @@ body[data-menu] .menu__list {
             background-size: 303px;
             background-position: right 66px top 6px;
         }
+        @media (min-width: $q-laptop){
+            background-size: 370px;
+            background-position: center;
+        }
         @media (min-width: $q-desktop){
             background-size: 470px;
             background-position: center;

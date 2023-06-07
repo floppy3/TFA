@@ -40,9 +40,13 @@
         margin: 0px -77px;
         padding: 0px 77px;
     }
-    @media (min-width: $q-desktop){
+    @media (min-width: $q-laptop){
         .cards{           
             margin: 44px 0px 110px;
+        }
+    }
+    @media (min-width: $q-desktop){
+        .cards{           
             &__el{
                 border: 2px solid $c-third;
                 border-radius: 30px;
