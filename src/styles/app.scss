@@ -162,6 +162,18 @@ body[data-menu] .menu__list {
             }
         }
     }
+    @media (min-width: $q-laptop){
+        &--meet, &--solution{
+            div:last-of-type{
+                margin-top: 162px;
+            }
+        }
+        &--meet{
+            div:last-of-type{
+                margin-top: 360px;
+            }
+        }
+    }
     @media(min-width: $q-desktop){
         padding-top: 198px;
         &--context{
@@ -196,6 +208,13 @@ body[data-menu] .menu__list {
                 margin: 106px 0px 0px;
             }
         }
+    }
+}
+
+.section--solution .txt--end:last-of-type, .section--conclusion .txt--end{
+    margin-top: 45px;
+    @media (min-width: $q-desktop){
+    margin-top: 144px;
     }
 }
 
@@ -325,6 +344,91 @@ body[data-menu] .menu__list {
         div{
             background-size: 200px;
             min-height: auto;
+        }
+    }
+}
+
+.section--feature ul {
+    li{
+        position: relative;
+        summary:before{
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: -1;
+            left: -54px;
+            top: 22px;
+        }
+        &:nth-child(1) summary::before{
+            content: "";
+            background-image: url(../assets/images/icon_localisation_m.svg);
+            width: 28px;
+            height: 42px;
+        }
+        &:nth-child(2) summary::before{
+            content: "";
+            background-image: url(../assets/images/icon_pro_m.svg);
+            width: 40px;
+            height: 36px;
+        }
+        &:nth-child(3) summary::before{
+            content: "";
+            background-image: url(../assets/images/icon_therapy_m.svg);
+            width: 31px;
+            height: 37px;
+        }
+        &:nth-child(4) summary::before{
+            content: "";
+            background-image: url(../assets/images/icon_log_m.svg);
+            width: 35px;
+            height: 29px;
+            top: 18px;
+        }
+        &:nth-child(5) summary::before{
+            content: "";
+            background-image: url(../assets/images/icon_like_m.svg);
+            width: 28px;
+            height: 28px;
+            top: 18px;
+        }
+        @media (min-width: $q-desktop){
+            summary::before{
+                left: -88px;
+            }
+            &:nth-child(1) summary::before{
+                content: "";
+                background-image: url(../assets/images/icon_localisation.svg);
+                width: 59px;
+                height: 74px;
+                top: 20px;
+            }
+            &:nth-child(2) summary::before{
+                content: "";
+                background-image: url(../assets/images/icon_pro.svg);
+                width: 70px;
+                height: 68px;
+                top: 24px;
+            }
+            &:nth-child(3) summary::before{
+                content: "";
+                background-image: url(../assets/images/icon_therapy.svg);
+                width: 61px;
+                height: 70px;
+                top: 24px;
+            }
+            &:nth-child(4) summary::before{
+                content: "";
+                background-image: url(../assets/images/icon_log.svg);
+                width: 68px;
+                height: 57px;
+                top: 25px;
+            }
+            &:nth-child(5) summary::before{
+                content: "";
+                background-image: url(../assets/images/icon_like.svg);
+                width: 54px;
+                height: 51px;
+                top: 30px;
+            }
         }
     }
 }

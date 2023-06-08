@@ -8,9 +8,22 @@
       margin-top: 22px;
     }
   }
+  &--feature{
+    details{
+      margin-left: 54px;
+      @media (min-width: $q-tablet2){
+        margin-right: 63px;
+      }
+      @media (min-width: $q-laptop){
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+  }
 }
 details{
     border-bottom: 1px solid $c-fourth;
+    max-width: 778px;
     summary{
       display: block;
       padding: 18px 0px;
@@ -35,7 +48,12 @@ details{
       transform: rotate(45deg);
       transition: transform 0.3s ease-in-out;
     }
-
+    @media (min-width: 1235px){
+      summary{
+        box-sizing: border-box;
+        height: 108px;
+      }
+    }
     @media (min-width: $q-desktop) {
       font-size: var(--text);
       border-bottom: 2px solid $c-fourth;
@@ -61,6 +79,15 @@ details{
   }
   
 }
+.section--feature ul{
+  li{
+    @media (min-width: 1340px) {
+      &:nth-child(3) summary{
+        padding: 36px 0px;
+      }
+    }
+  }
+}      
 
 /* Needs counters */ 
 .container-problems{
