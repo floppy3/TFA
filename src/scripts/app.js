@@ -1,4 +1,8 @@
 "use strict" ;
+import gsap from "../../node_modules/gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 /* Burger menu */
 let menuBurger = document.querySelector('.menu__burger');
 menuBurger.addEventListener('click',toggleNavigation);
@@ -200,3 +204,5 @@ const move4 = (e) => {
 	slider4.addEventListener('mouseup', end4);
 	slider4.addEventListener('touchend', end4);
 })();
+
+console.log(gsap.version);

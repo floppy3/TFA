@@ -1361,6 +1361,9 @@ body[data-menu] .menu__list {
   content: "—";
   text-indent: -18px;
 }
+.section--conclusion .citation {
+  margin: 45px 0px;
+}
 @media (min-width: 650px) {
   .section--solution div:last-of-type ul {
     padding-left: 0px;
@@ -1372,6 +1375,9 @@ body[data-menu] .menu__list {
   }
   .section--meet div:last-of-type {
     margin-top: 360px;
+  }
+  .section--conclusion .citation {
+    margin: 45px 2em 0px 2em;
   }
 }
 @media (min-width: 1200px) {
@@ -1394,7 +1400,7 @@ body[data-menu] .menu__list {
     text-indent: -25px;
   }
   .section--conclusion .citation {
-    margin: 106px 0px 0px;
+    margin: 106px 2em 0px 2em;
   }
 }
 
@@ -1404,6 +1410,18 @@ body[data-menu] .menu__list {
 @media (min-width: 1200px) {
   .section--solution .txt--end:last-of-type, .section--conclusion .txt--end {
     margin-top: 144px;
+  }
+}
+
+.section--conclusion .txt--big {
+  max-width: none;
+  text-align: right;
+  padding: 0px;
+  margin: 45px 0px 72px;
+}
+@media (min-width: 1200px) {
+  .section--conclusion .txt--big {
+    margin: 110px 0px;
   }
 }
 
