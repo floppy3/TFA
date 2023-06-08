@@ -28,7 +28,7 @@ details{
       transition: transform 0.3s ease-in-out;
     }
 
-    @media (min-width: $q-desktop2) {
+    @media (min-width: $q-desktop) {
       font-size: var(--text);
       border-bottom: 2px solid $c-fourth;
       summary{
@@ -43,16 +43,26 @@ details{
       }
     }
 }
+@media (min-width: $q-desktop) {
+  .section--feature ul{
+    li{
+      &:nth-child(4) summary, &:nth-child(5) summary{
+        padding: 36px 0px;
+      }
+    }
+  }
+  
+}
 
 /* Besoins compteurs */ 
 .container-problems{
     overflow: hidden;
-    margin: 0px -24px;
+    margin: 36px -24px 0px;
     padding: 0px 24px;
   .problems{
     display: flex;
     width: fit-content;
-    margin: 72px 0px 54px;
+    margin: 72px 0px 18px;
     .problem{
       margin-right: 9px;
       &:nth-child(even) .problem__text{
@@ -96,12 +106,16 @@ details{
     }
   }
   @media (min-width: $q-tablet1){
-    margin: 0px -36px;
+    margin: 36px -36px 0px;
     padding: 0px 36px;
   }
   @media (min-width: $q-tablet2){
-    margin: 0px -66px;
+    margin: 36px -66px 0px;
     padding: 0px 66px;
+  }
+  @media (min-width: $q-tablet4){
+    margin: 36px -77px 0px;
+    padding: 0px 77px;
   }
   @media (min-width: $q-laptop){
     margin: 0;

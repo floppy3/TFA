@@ -873,7 +873,7 @@ details[open] summary::after {
   transform: rotate(45deg);
   transition: transform 0.3s ease-in-out;
 }
-@media (min-width: 1450px) {
+@media (min-width: 1200px) {
   details {
     font-size: var(--text);
     border-bottom: 2px solid #BFBFBF;
@@ -890,17 +890,22 @@ details[open] summary::after {
   }
 }
 
+@media (min-width: 1200px) {
+  .section--feature ul li:nth-child(4) summary, .section--feature ul li:nth-child(5) summary {
+    padding: 36px 0px;
+  }
+}
 /* Besoins compteurs */
 .container-problems {
   overflow: hidden;
-  margin: 0px -24px;
+  margin: 36px -24px 0px;
   padding: 0px 24px;
 }
 .container-problems .problems {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 72px 0px 54px;
+  margin: 72px 0px 18px;
 }
 .container-problems .problems .problem {
   margin-right: 9px;
@@ -945,14 +950,20 @@ details[open] summary::after {
 }
 @media (min-width: 540px) {
   .container-problems {
-    margin: 0px -36px;
+    margin: 36px -36px 0px;
     padding: 0px 36px;
   }
 }
 @media (min-width: 650px) {
   .container-problems {
-    margin: 0px -66px;
+    margin: 36px -66px 0px;
     padding: 0px 66px;
+  }
+}
+@media (min-width: 800px) {
+  .container-problems {
+    margin: 36px -77px 0px;
+    padding: 0px 77px;
   }
 }
 @media (min-width: 1025px) {
