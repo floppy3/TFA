@@ -1,6 +1,14 @@
 @use '../utils/variables' as v;
 
 /* Details */
+.section{
+  &--meet ul, &--feature ul{
+    margin-top: 36px;
+    @media (min-width: $q-laptop){
+      margin-top: 22px;
+    }
+  }
+}
 details{
     border-bottom: 1px solid $c-fourth;
     summary{
@@ -54,7 +62,7 @@ details{
   
 }
 
-/* Besoins compteurs */ 
+/* Needs counters */ 
 .container-problems{
     overflow: hidden;
     margin: 36px -24px 0px;
@@ -124,7 +132,7 @@ details{
     .problems{
       width: 100%;
       display: grid;
-      margin: 132px 0px 46px;
+      margin: 112px 0px 0px;
       .problem{
         margin: 0 auto;
         &__count{
@@ -206,6 +214,40 @@ details{
     }
   }
 }
+
+/* Needs links */
+
+.problems-links{
+    overflow: hidden;
+    margin: 3em -24px 4em;
+    padding: 0px 24px;
+    &__el{
+      width: 1000px;
+    }
+    @media (min-width: $q-tablet1){
+      margin: 3em -36px 4em;
+      padding: 0px 36px;
+    }
+    @media (min-width: $q-tablet2){
+      margin: 3em -66px 4em;
+      padding: 0px 66px;
+    }
+    @media (min-width: $q-tablet4){
+      margin: 3em -77px 4em;
+      padding: 0px 77px;
+    }
+    @media (min-width: $q-laptop){
+      margin: 56px 0px 11px;
+      padding: 0;
+      overflow: initial;
+      &__el{
+        width: 100%;
+      }
+    }
+}
+
+
+
 
 
   /* Animations */ 

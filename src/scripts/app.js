@@ -122,7 +122,7 @@ const move2 = (e) => {
 })();
 
 
-// scroll mobile problems count 
+// scroll mobile problems count mobile
 let isDown3 = false;
 let startX3;
 let scrollLeft3;
@@ -161,4 +161,42 @@ const move3 = (e) => {
 	slider3.addEventListener('touchend', end3);
 })();
 
+// problems links scroll mobile
 
+let isDown4 = false;
+let startX4;
+let scrollLeft4;
+const slider4 = document.querySelector('.problems-links');
+
+const end4 = () => {
+	isDown4 = false;
+  slider4.classList.remove('dragging');
+}
+
+const start4 = (e) => {
+  isDown4 = true;
+  slider4.classList.add('dragging');
+  startX4 = e.pageX || e.touches[0].pageX - slider4.offsetLeft;
+  scrollLeft4 = slider4.scrollLeft;	
+}
+
+const move4 = (e) => {
+	if(!isDown4) return;
+
+  e.preventDefault();
+  const x4 = e.pageX || e.touches[0].pageX - slider4.offsetLeft;
+  const dist4 = (x4 - startX4);
+  slider4.scrollLeft = scrollLeft4 - dist4;
+}
+
+(() => {
+	slider4.addEventListener('mousedown', start4);
+	slider4.addEventListener('touchstart', start4);
+
+	slider4.addEventListener('mousemove', move4);
+	slider4.addEventListener('touchmove', move4);
+
+	slider4.addEventListener('mouseleave', end4);
+	slider4.addEventListener('mouseup', end4);
+	slider4.addEventListener('touchend', end4);
+})();

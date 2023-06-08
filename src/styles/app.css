@@ -391,11 +391,11 @@ details p {
   }
   .section--context ul li:nth-child(2) {
     grid-row: 3;
-    margin-bottom: 44px;
+    margin-bottom: 176px;
   }
   .section--context ul li:nth-child(3) {
     grid-row: 2;
-    margin-bottom: 176px;
+    margin-bottom: 44px;
   }
   .section--context ul li:nth-child(4) {
     grid-row: 4;
@@ -899,6 +899,15 @@ details p {
   }
 }
 /* Details */
+.section--meet ul, .section--feature ul {
+  margin-top: 36px;
+}
+@media (min-width: 1025px) {
+  .section--meet ul, .section--feature ul {
+    margin-top: 22px;
+  }
+}
+
 details {
   border-bottom: 1px solid #BFBFBF;
 }
@@ -948,7 +957,7 @@ details[open] summary::after {
     padding: 36px 0px;
   }
 }
-/* Besoins compteurs */
+/* Needs counters */
 .container-problems {
   overflow: hidden;
   margin: 36px -24px 0px;
@@ -1028,7 +1037,7 @@ details[open] summary::after {
   .container-problems .problems {
     width: 100%;
     display: grid;
-    margin: 132px 0px 46px;
+    margin: 112px 0px 0px;
   }
   .container-problems .problems .problem {
     margin: 0 auto;
@@ -1097,6 +1106,44 @@ details[open] summary::after {
     height: 173px;
     top: -54px;
     left: 63px;
+  }
+}
+
+/* Needs links */
+.problems-links {
+  overflow: hidden;
+  margin: 3em -24px 4em;
+  padding: 0px 24px;
+}
+.problems-links__el {
+  width: 1000px;
+}
+@media (min-width: 540px) {
+  .problems-links {
+    margin: 3em -36px 4em;
+    padding: 0px 36px;
+  }
+}
+@media (min-width: 650px) {
+  .problems-links {
+    margin: 3em -66px 4em;
+    padding: 0px 66px;
+  }
+}
+@media (min-width: 800px) {
+  .problems-links {
+    margin: 3em -77px 4em;
+    padding: 0px 77px;
+  }
+}
+@media (min-width: 1025px) {
+  .problems-links {
+    margin: 56px 0px 11px;
+    padding: 0;
+    overflow: initial;
+  }
+  .problems-links__el {
+    width: 100%;
   }
 }
 
