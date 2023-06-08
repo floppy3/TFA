@@ -281,6 +281,54 @@ body[data-menu] .menu__list {
     margin: 45px auto;
 }
 
+.container-fondamental{
+    margin-top: 27px;
+    div{
+        background-image: url(../assets/images/logo_grey.svg);
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-position: center;
+        max-width: 345px;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        min-height: 186.66px;
+    }
+    @media (min-width: $q-mobile1) {
+        div{
+            background-size: 140px;
+            background-position: center;
+        }
+    }
+    @media (min-width: $q-tablet4) {
+        div{
+            background-size: 140px;
+            background-position: center;
+            max-width: none;
+        }
+    } 
+    @media (min-width: $q-laptop) {
+        div{
+            background-size: 140px;
+            background-position: top;
+            min-height: 152px;
+        }
+    }
+    @media (min-width: $q-desktop) {
+        margin-top: 50.5px;
+        div{
+            background-size: 140px;
+            background-position: center;
+        }
+    }
+    @media (min-width: $q-desktop2) {
+        margin-top: 50.5px;
+        div{
+            background-size: 200px;
+            min-height: auto;
+        }
+    }
+}
+
 
 
 

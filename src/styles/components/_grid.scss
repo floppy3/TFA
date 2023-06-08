@@ -45,6 +45,14 @@
     grid-column-end: -1;
 }
 
+@media (min-width: $q-laptop){
+    .grid{
+        display: grid;
+            grid-template-columns: 88px 2.2fr 88px 1.81fr 2.71fr 88px 3.2fr;
+            grid-column-gap: 33px;
+    }
+}
+
 /* Special section show */
 .d-grid-show-t{
     grid-row-start: 3;
@@ -53,13 +61,55 @@
     grid-row-start: 4;
 }
 
+/* Special fondamental needs */
 
-/* Problems count*/
+.container-fondamental{
+    @media (min-width: $q-tablet4){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 2em;
+            .t-grid-start02{
+                grid-column-start: 2;
+            }
+            .t-grid-start02{
+                grid-column-start: 2;
+            }
+            .t-grid-start03{
+                grid-column-start: 3;
+            }
+            .t-grid-end03{
+                grid-column-end: 3;
+            }
+            .t-grid-end04{
+                grid-column-end: 4;
+            }
+            .t-grid-end{
+                grid-column-end: -1;
+            }
 
-@media (min-width: $q-laptop){
-    .grid{
-        display: grid;
-            grid-template-columns: 88px 2.2fr 88px 1.81fr 2.71fr 88px 3.2fr;
-            grid-column-gap: 33px;
+    }
+    @media (min-width: $q-desktop){
+            display: grid;
+                grid-template-columns: 88px 2.2fr 88px 1.81fr 2.71fr 88px 3.2fr;
+                grid-column-gap: 33px;
+                .d-grid-start01{
+                    grid-column-start: 1;
+                }
+                .d-grid-start04{
+                    grid-column-start: 4;
+                }
+                .d-grid-start06{
+                    grid-column-start: 6;
+                }
+
+                .d-grid-end04{
+                    grid-column-end: 4;
+                }
+                .d-grid-end06{
+                    grid-column-end: 6;
+                }
+                .d-grid-end{
+                    grid-column-end: -1;
+                }
     }
 }
