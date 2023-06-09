@@ -84,6 +84,9 @@ body {
       @media (min-width: $q-mobile1){
         margin-left: 74px;
       }
+      @media (min-width: $q-laptop){
+        margin-left: 0px;
+      }
     }
   }
 }
@@ -235,12 +238,13 @@ details{
     font-weight: 500;
   }
   &__el{
+    font-size: 25px;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 0.02em;
     -webkit-transition: 0.2s;
-    &--active{
-      border-bottom: 1px solid #000000;
+    @media (min-width: $q-tablet1){
+      font-size: 31px;
     }
     @media (min-width: $q-desktop){
       font-size: 15px;
@@ -346,9 +350,6 @@ details{
       font-size: 150px;
       line-height: 1;
       margin: 88px -10px 198px 0px;
-      span{
-        margin-left: 0;
-      }
     }
     &--big{
       margin-bottom: 88px;

@@ -1,5 +1,80 @@
 @use '../utils/variables' as v;
 
+/* Menu anim */
+//burger menu
+.menu__burger{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  span{
+    font-size: 0;
+  }
+  .burger-open{
+    z-index: 54px;
+  }
+  .burger-close{
+    display: none;
+    opacity: 0;
+    z-index: 54px;
+  }
+}
+body[data-menu]{
+  .burger-open{
+    opacity: 0;
+    display: none;
+  }
+  .burger-close{
+    display: initial;
+    opacity: 1;
+  }
+}
+
+//menu__el
+.draw-anim{
+  pointer-events: none;
+  max-width: none;
+  
+  position: absolute;
+  z-index: 55;
+  top: -6px;
+  left: -12px;
+
+  display: block;
+  width: calc(100% + 24px);
+  height: calc(100% + 12px);
+  path { 
+    --path-lenght: 367;
+    stroke-width: 1px;
+    stroke-dasharray: var(--path-lenght);
+    stroke-dashoffset: var(--path-lenght);
+    transition: stroke-dashoffset .5s;
+  }
+}
+.menu{
+  &__el{
+    a{
+      position: relative;
+    }
+    .menu-text{
+      position: relative;
+    }
+    &--active{
+      .draw-anim{
+        path{
+          stroke-dashoffset: 0;
+          transition: stroke-dashoffset none;
+        }
+      }
+    }
+    &:hover .draw-anim > * {
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset .5s;
+    }
+  }
+}
+
 /* Details */
 .section{
   &--meet ul, &--feature ul{
