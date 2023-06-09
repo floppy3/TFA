@@ -1334,6 +1334,7 @@ body[data-menu] .menu__list {
 }
 @media (min-width: 1921px) {
   .main {
+    padding: 0 220px;
     margin: 0 auto;
   }
 }
@@ -1414,6 +1415,7 @@ body[data-menu] .menu__list {
 }
 
 .section--conclusion .txt--big {
+  position: relative;
   max-width: none;
   text-align: right;
   padding: 0px;
@@ -1421,7 +1423,7 @@ body[data-menu] .menu__list {
 }
 @media (min-width: 1200px) {
   .section--conclusion .txt--big {
-    margin: 110px 0px;
+    margin: 88px 0px;
   }
 }
 
@@ -1653,6 +1655,63 @@ body[data-menu] .menu__list {
     width: 54px;
     height: 51px;
     top: 30px;
+  }
+}
+
+.line-end {
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+@media (min-width: 370px) {
+  .line-end--m {
+    display: initial;
+    width: 175px;
+    height: 52px;
+    right: 123px;
+    top: -38px;
+  }
+}
+@media (min-width: 800px) {
+  .line-end {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .line-end--t4 {
+    display: initial;
+    width: 242px;
+    height: 52px;
+    right: 123px;
+    top: -38px;
+  }
+}
+@media (min-width: 1025px) {
+  .line-end--t4 {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .line-end--l {
+    display: initial;
+    width: 526px;
+    height: 84px;
+    right: 123px;
+    top: -62px;
+  }
+}
+@media (min-width: 1500px) {
+  .line-end--l {
+    display: none;
+  }
+}
+@media (min-width: 1500px) {
+  .line-end--d2 {
+    display: initial;
+    width: 452px;
+    height: 134px;
+    right: 144px;
+    top: -107px;
   }
 }
 

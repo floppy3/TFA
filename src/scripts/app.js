@@ -205,4 +205,30 @@ const move4 = (e) => {
 	slider4.addEventListener('touchend', end4);
 })();
 
-console.log(gsap.version);
+
+// Anim gsap 
+const phone = document.querySelector('.phone');
+if (phone){
+  phoneAnim();
+}
+
+function phoneAnim(){
+  gsap.fromTo(".phone", {
+    y: 50,
+    rotation: -10,
+    opacity: 0.5,
+  },
+  {
+    y: 0,
+    rotation: 4,
+    opacity: 1,
+    scrollTrigger: { 
+      trigger: ".phone",
+      scrub: 0.6,
+      start: "top bottom",
+      end: "bottom -=100",
+    },
+});
+  
+ 
+}

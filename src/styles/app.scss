@@ -121,6 +121,7 @@ body[data-menu] .menu__list {
         margin: 0 220px;
     }
     @media (min-width: 1921px){
+        padding: 0 220px;
         margin: 0 auto;
     }
 }
@@ -231,12 +232,13 @@ body[data-menu] .menu__list {
 
 .section--conclusion{
     .txt--big{
+        position: relative;
         max-width: none;
         text-align: right;
         padding: 0px;
         margin: 45px 0px 72px;
         @media (min-width: $q-desktop){
-            margin: 110px 0px;
+            margin: 88px 0px;
         }
     }
 }
@@ -452,6 +454,58 @@ body[data-menu] .menu__list {
                 height: 51px;
                 top: 30px;
             }
+        }
+    }
+}
+
+.line-end{
+    position: absolute;
+    z-index: -1;
+    display: none;
+    &--m{
+        @media (min-width: 370px){
+            display: initial;
+            width: 175px;
+            height: 52px;
+            right: 123px;
+            top: -38px;
+            }
+        }
+        @media (min-width: $q-tablet4){
+            display: none;
+        }
+    &--t4{
+        @media (min-width: $q-tablet4){
+            display: initial;
+            width: 242px;
+            height: 52px;
+            right: 123px;
+            top: -38px;
+        }
+        @media (min-width: $q-laptop){
+            display: none;
+        }
+    }
+    &--l{
+        @media (min-width: $q-laptop){
+            display: initial;
+            width: 526px;
+            height: 84px;
+            right: 123px;
+            top: -62px;
+        }
+        @media (min-width: 1500px){
+            display: none;
+        }
+    }
+    &--d2{
+        @media (min-width: 1500px){
+            display: initial;
+                width: 452px;
+                height: 134px;
+                right: 144px;
+                top: -107px;
+            
         }
     }
 }
