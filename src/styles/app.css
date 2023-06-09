@@ -1214,14 +1214,15 @@ details[open] summary::after {
   }
   .container-problems .problems .problem__count {
     opacity: 0;
+    transition-delay: 0.1s;
   }
   .container-problems .problems .problem:hover .problem__img path {
-    fill: #E5E2F7;
+    opacity: 0.8;
     transition-delay: 0.1s;
   }
   .container-problems .problems .problem:hover .problem__count {
     opacity: 1;
-    transition-delay: 0.1s;
+    transition-delay: 0.2s;
   }
   .container-problems .problems .problem--1 {
     margin-top: 0px;
@@ -1333,6 +1334,94 @@ details[open] summary::after {
     stroke-dashoffset: 0;
   }
 }
+/* COLORS */
+/* $c-alt: #e41612; */
+/* MEDIA QUERIES */
+/* TEXTS */
+:root {
+  --legend: 12px;
+  --textlittle: 17px;
+  --text: 18px;
+  --textbig: 28px;
+  --subtitle: 35px;
+  --title: 44px;
+  --bigtitle: 55px;
+  --vbigtitle: 69px;
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --legend: 16px;
+    --textlittle: 19px;
+    --text: 20px;
+    --textbig: 31px;
+    --subtitle: 44px;
+    --title: 62px;
+    --bigtitle: 88px;
+    --vbigtitle: 175px;
+  }
+}
+@media (min-width: 1450px) {
+  :root {
+    --legend: 16px;
+    --textlittle: 21px;
+    --text: 22px;
+    --textbig: 31px;
+    --subtitle: 44px;
+    --title: 62px;
+    --bigtitle: 88px;
+    --vbigtitle: 175px;
+  }
+}
+.section--polices .title {
+  margin: 88px 0px 0px;
+  padding: 0px;
+}
+.section--polices .title span {
+  margin: 0px;
+}
+.section--polices .title--home:nth-child(1) {
+  font-weight: 600;
+  margin-bottom: 110px;
+}
+.section--polices .title--ui {
+  font-size: var(--text);
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 44px;
+}
+.section--polices .title--ui span {
+  font-weight: 500;
+}
+.section--polices .legende {
+  margin: 0px;
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .section--polices .legende {
+    font-size: 16px;
+    margin-bottom: 88px;
+  }
+}
+.section--polices .right {
+  text-align: right;
+}
+.section--polices .txt {
+  font-size: var(--text);
+  margin: 88px 0px 0px;
+  padding: 0px;
+}
+.section--polices .txt--big {
+  text-align: left;
+}
+.section--polices .author {
+  text-align: left;
+}
+
+/* .section--links{
+
+} */
 * {
   margin: 0;
   padding: 0;

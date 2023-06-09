@@ -293,17 +293,18 @@ details{
         margin: 0 auto;
         &__count{
           opacity: 0;
+          transition-delay: .1s;
         }
         &:hover{
           .problem__img{
             path{
-              fill: $c-sixth;
+              opacity: 0.8;
               transition-delay: .1s;
             }
           }
           .problem__count{
             opacity: 1;
-            transition-delay: .1s;
+            transition-delay: .2s;
           }
         }
         &--1{

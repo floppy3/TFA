@@ -1,0 +1,50 @@
+@use '../utils/variables' as v;
+
+.section--polices{
+    .title{
+        margin: 88px 0px 0px;
+        padding: 0px;
+        span{
+            margin: 0px;
+        }
+        &--home:nth-child(1){
+            font-weight: 600;
+            margin-bottom: 110px;
+        }
+        &--ui{
+            font-size: var(--text);
+            font-weight: 200;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-bottom: 44px;
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+    .legende{
+        margin: 0px;
+        font-size: 14px;
+        @media (min-width: $q-laptop){
+            font-size: 16px;
+            margin-bottom: 88px;
+        }
+    }
+    .right{
+        text-align: right;
+    }
+    .txt{
+        font-size: var(--text);
+        margin: 88px 0px 0px;
+        padding: 0px;
+        &--big{
+            text-align: left;
+        }
+    }
+    .author{
+        text-align: left;
+    }
+}
+/* .section--links{
+
+} */
