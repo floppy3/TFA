@@ -208,6 +208,76 @@ const move4 = (e) => {
 
 
 // Anim gsap 
+const graph = document.querySelector('.graph');
+if (graph){
+  graphAnim();
+}
+
+function graphAnim(){
+  var anxietyAnim = gsap.timeline();
+  anxietyAnim.to(".trait--2", {
+    rotation: 72, 
+    transformOrigin: '0% 100%',
+    scrollTrigger: {
+      trigger: ".graph",
+      scrub: 0.4,
+      start: "top 55%",
+      end: "bottom 30%",
+    },
+  })
+  .to(".anxiete1", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".graph",
+      scrub: 0.4,
+      start: "top 57%",
+      end: "bottom 50%",
+    },
+  }, '<')
+  .to(".anxiete2", {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".graph",
+      scrub: 0.4,
+      start: "bottom 61%",
+      end: "bottom 30%",
+    },
+  },);
+
+  var depressionAnim = gsap.timeline();
+  depressionAnim.to(".trait--3", {
+    rotation: 140.4, 
+    transformOrigin: '0% 100%',
+    scrollTrigger: {
+      trigger: ".graph",
+      scrub: 0.4,
+      start: "top 56%",
+      end: "bottom 31%",
+    },
+  })
+  .to(".depression1", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".graph",
+      scrub: 0.4,
+      start: "top 57%",
+      end: "bottom 65%",
+    },
+  },)
+  .to(".depression2", {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".graph",
+      scrub: 0.4,
+      start: "bottom 68%",
+      end: "bottom 32%",
+    },
+  },);
+
+}
+
+
+
 const phone = document.querySelector('.phone');
 if (phone){
   phoneAnim();

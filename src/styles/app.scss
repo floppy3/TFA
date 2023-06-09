@@ -20,7 +20,6 @@ li{
     list-style-type: none;
 }
 
-
 /* NAV */
 
 .logo{
@@ -48,6 +47,12 @@ li{
         display: flex;
         align-items: center;
         gap: 6px;
+        transition: transform .2s;
+        &:hover{
+            color: $c-secondary;
+            transform: scale(1.01);
+            transition: transform .3s;
+        }
     }
     &__burger{
         z-index: 51;
@@ -499,6 +504,10 @@ body[data-menu] .menu__list {
             width: 526px;
             height: 84px;
             right: 123px;
+            top: -62px;
+        }
+        @media (min-width: $q-laptop){
+            right: 145px;
             top: -62px;
         }
         @media (min-width: 1500px){

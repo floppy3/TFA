@@ -206,6 +206,13 @@ body a {
   margin-top: 26px;
 }
 
+.author {
+  font-size: var(--legend);
+  font-style: normal;
+  text-align: end;
+  margin-top: 1em;
+}
+
 /* Citations */
 .citation__content {
   font-family: "Caveat", cursive;
@@ -350,6 +357,15 @@ details p {
 }
 .footer .linkList__el {
   margin: 0 9px;
+  transition: transform 0.2s;
+}
+.footer .linkList__el:hover {
+  color: #404040;
+  transform: scale(1.02);
+  transition: transform 0.3s;
+}
+.footer__el a:hover {
+  color: black;
 }
 
 /* Responsive */
@@ -760,6 +776,10 @@ details p {
   }
 }
 @media (min-width: 1200px) {
+  .wrapper {
+    margin: 0px -66px;
+    padding: 0px 66px;
+  }
   .wrapper .cards__el {
     border: 2px solid #8C8C8C;
     border-radius: 30px;
@@ -834,6 +854,10 @@ details p {
   }
 }
 @media (min-width: 1200px) {
+  .wrapper-2 {
+    margin: 0px -66px;
+    padding: 0px 66px;
+  }
   .wrapper-2__container {
     margin: 66px 0px 0px;
   }
@@ -1359,6 +1383,12 @@ li {
   display: flex;
   align-items: center;
   gap: 6px;
+  transition: transform 0.2s;
+}
+.menu__logo a:hover {
+  color: #404040;
+  transform: scale(1.01);
+  transition: transform 0.3s;
 }
 .menu__burger {
   z-index: 51;
@@ -1827,6 +1857,12 @@ body[data-menu] .menu__list {
     width: 526px;
     height: 84px;
     right: 123px;
+    top: -62px;
+  }
+}
+@media (min-width: 1024px) {
+  .line-end--l {
+    right: 145px;
     top: -62px;
   }
 }

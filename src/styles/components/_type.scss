@@ -126,6 +126,13 @@ body {
   }
 }
 
+.author{
+  font-size: var(--legend);
+  font-style: normal;
+  text-align: end;
+  margin-top: 1em;
+}
+
 /* Citations */
 .citation{
   &__content{
@@ -268,8 +275,21 @@ details{
     margin-bottom: 18px;
     &__el{
       margin: 0 9px;
+      transition: transform .2s;
+      &:hover{
+        color: $c-secondary;
+        transform: scale(1.02);
+        transition: transform .3s;
+    }
     }
   }
+  &__el{
+  a{
+    &:hover{
+      color: black;
+    }
+  }
+}
 }
 
 /* Responsive */

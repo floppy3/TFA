@@ -46,6 +46,8 @@
         }
     }
     @media (min-width: $q-desktop){
+        margin: 0px -66px;
+        padding: 0px 66px;
         .cards{           
             &__el{
                 border: 2px solid $c-third;
@@ -107,6 +109,8 @@
         padding: 0px 77px;
     }
     @media (min-width: $q-desktop){
+        margin: 0px -66px;
+        padding: 0px 66px;
         &__container{
             margin: 66px 0px 0px;
             .citation{
