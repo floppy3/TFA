@@ -966,6 +966,57 @@ body[data-menu] .burger-close {
   transition: stroke-dashoffset 0.5s;
 }
 
+/* Graph */
+.section--context figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section--context figure .graph {
+  margin: 0 auto;
+  margin-top: 54px;
+}
+@media (min-width: 1024px) {
+  .section--context figure .graph {
+    margin-top: 88px;
+    width: 339px;
+    height: 357.08px;
+  }
+}
+.section--context figure .graph .annee2 .depression2, .section--context figure .graph .annee2 .anxiete2 {
+  opacity: 0;
+}
+.section--context figcaption {
+  margin-top: 1em;
+}
+.section--context figcaption .year {
+  font-family: "Caveat", cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--title);
+  line-height: 1.3;
+}
+.section--context figcaption .year--1 {
+  position: relative;
+}
+.section--context figcaption .year--2 {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+}
+.section--context .graph-legend {
+  margin-top: 3em;
+  display: flex;
+  gap: 2em;
+}
+.section--context .anxiety, .section--context .depression {
+  display: flex;
+}
+.section--context .anxiety__legend, .section--context .depression__legend {
+  margin-right: 11px;
+}
+
 /* Details */
 .section--meet ul, .section--feature ul {
   margin-top: 36px;
