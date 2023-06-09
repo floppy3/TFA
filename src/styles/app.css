@@ -1373,50 +1373,125 @@ details[open] summary::after {
     --vbigtitle: 175px;
   }
 }
-.section--polices .title {
+.section--polices .title, .section--links .title, .section--credits .title {
   margin: 88px 0px 0px;
   padding: 0px;
 }
-.section--polices .title span {
+.section--polices .title span, .section--links .title span, .section--credits .title span {
   margin: 0px;
 }
-.section--polices .title--home:nth-child(1) {
+.section--polices .title--home:nth-child(1), .section--links .title--home:nth-child(1), .section--credits .title--home:nth-child(1) {
   font-weight: 600;
   margin-bottom: 110px;
 }
-.section--polices .title--ui {
+.section--polices .title--ui, .section--links .title--ui, .section--credits .title--ui {
   font-size: var(--text);
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin-bottom: 44px;
 }
-.section--polices .title--ui span {
+.section--polices .title--ui span, .section--links .title--ui span, .section--credits .title--ui span {
   font-weight: 500;
 }
-.section--polices .legende {
+.section--polices .legende, .section--links .legende, .section--credits .legende {
+  color: #8C8C8C;
   margin: 0px;
   font-size: 14px;
 }
 @media (min-width: 1024px) {
-  .section--polices .legende {
+  .section--polices .legende, .section--links .legende, .section--credits .legende {
     font-size: 16px;
     margin-bottom: 88px;
   }
 }
-.section--polices .right {
+.section--polices .right, .section--links .right, .section--credits .right {
   text-align: right;
 }
-.section--polices .txt {
+.section--polices .txt, .section--links .txt, .section--credits .txt {
   font-size: var(--text);
+  font-weight: 300;
   margin: 88px 0px 0px;
   padding: 0px;
 }
-.section--polices .txt--big {
+.section--polices .txt--big, .section--links .txt--big, .section--credits .txt--big {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.45;
   text-align: left;
 }
-.section--polices .author {
+.section--polices .txt--bold, .section--links .txt--bold, .section--credits .txt--bold {
+  font-weight: 500;
+}
+.section--polices .txt--little, .section--links .txt--little, .section--credits .txt--little {
+  font-size: var(--textlittle);
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+.section--polices .author, .section--links .author, .section--credits .author {
   text-align: left;
+}
+.section--polices .pdvisible, .section--polices .dvisible, .section--polices .dvisible-s, .section--links .pdvisible, .section--links .dvisible, .section--links .dvisible-s, .section--credits .pdvisible, .section--credits .dvisible, .section--credits .dvisible-s {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .section--polices .mvisible, .section--links .mvisible, .section--credits .mvisible {
+    display: none;
+  }
+  .section--polices .dvisible, .section--links .dvisible, .section--credits .dvisible {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .section--polices .pdvisible, .section--links .pdvisible, .section--credits .pdvisible {
+    display: block;
+  }
+  .section--polices .dvisible-s, .section--links .dvisible-s, .section--credits .dvisible-s {
+    display: none;
+  }
+}
+@media (min-width: 1450px) {
+  .section--polices .pdvisible, .section--links .pdvisible, .section--credits .pdvisible {
+    display: none;
+  }
+  .section--polices .dvisible-s, .section--links .dvisible-s, .section--credits .dvisible-s {
+    display: block;
+  }
+}
+.section--polices .diff-f, .section--links .diff-f, .section--credits .diff-f {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--text);
+  line-height: 1.45;
+}
+.section--polices .diff-f--big, .section--links .diff-f--big, .section--credits .diff-f--big {
+  font-size: var(--textbig);
+  line-height: 1.3;
+}
+.section--polices .diff-f--vbig, .section--links .diff-f--vbig, .section--credits .diff-f--vbig {
+  font-size: var(--subtitle);
+  line-height: 1.3;
+}
+.section--polices .menu__el, .section--links .menu__el, .section--credits .menu__el {
+  margin-bottom: 54px;
+}
+@media (min-width: 1024px) {
+  .section--polices .menu__el, .section--links .menu__el, .section--credits .menu__el {
+    margin-bottom: 88px;
+  }
+}
+.section--polices ul li, .section--links ul li, .section--credits ul li {
+  margin-top: 40px;
+}
+.section--polices ul li a, .section--links ul li a, .section--credits ul li a {
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.section--polices ul li a:hover, .section--links ul li a:hover, .section--credits ul li a:hover {
+  color: #8C8C8C;
 }
 
 /* .section--links{
