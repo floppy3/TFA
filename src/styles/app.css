@@ -1093,6 +1093,19 @@ details[open] summary::after {
   transform: rotate(45deg);
   transition: transform 0.3s ease-in-out;
 }
+details[open] summary ~ * {
+  animation: sweep 0.1s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
 @media (min-width: 1235px) {
   details summary {
     box-sizing: border-box;
@@ -1373,92 +1386,92 @@ details[open] summary::after {
     --vbigtitle: 175px;
   }
 }
-.section--polices .title, .section--links .title, .section--credits .title {
+.section--polices .title, .section--links .title, .section--credits .title, .section--video .title {
   margin: 88px 0px 0px;
   padding: 0px;
 }
-.section--polices .title span, .section--links .title span, .section--credits .title span {
+.section--polices .title span, .section--links .title span, .section--credits .title span, .section--video .title span {
   margin: 0px;
 }
-.section--polices .title--home:nth-child(1), .section--links .title--home:nth-child(1), .section--credits .title--home:nth-child(1) {
+.section--polices .title--home:nth-child(1), .section--links .title--home:nth-child(1), .section--credits .title--home:nth-child(1), .section--video .title--home:nth-child(1) {
   font-weight: 600;
   margin-bottom: 110px;
 }
-.section--polices .title--ui, .section--links .title--ui, .section--credits .title--ui {
+.section--polices .title--ui, .section--links .title--ui, .section--credits .title--ui, .section--video .title--ui {
   font-size: var(--text);
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin-bottom: 44px;
 }
-.section--polices .title--ui span, .section--links .title--ui span, .section--credits .title--ui span {
+.section--polices .title--ui span, .section--links .title--ui span, .section--credits .title--ui span, .section--video .title--ui span {
   font-weight: 500;
 }
-.section--polices .legende, .section--links .legende, .section--credits .legende {
+.section--polices .legende, .section--links .legende, .section--credits .legende, .section--video .legende {
   color: #8C8C8C;
   margin: 0px;
   font-size: 14px;
 }
 @media (min-width: 1024px) {
-  .section--polices .legende, .section--links .legende, .section--credits .legende {
+  .section--polices .legende, .section--links .legende, .section--credits .legende, .section--video .legende {
     font-size: 16px;
     margin-bottom: 88px;
   }
 }
-.section--polices .right, .section--links .right, .section--credits .right {
+.section--polices .right, .section--links .right, .section--credits .right, .section--video .right {
   text-align: right;
 }
-.section--polices .txt, .section--links .txt, .section--credits .txt {
+.section--polices .txt, .section--links .txt, .section--credits .txt, .section--video .txt {
   font-size: var(--text);
   font-weight: 300;
   margin: 88px 0px 0px;
   padding: 0px;
 }
-.section--polices .txt--big, .section--links .txt--big, .section--credits .txt--big {
+.section--polices .txt--big, .section--links .txt--big, .section--credits .txt--big, .section--video .txt--big {
   font-size: 25px;
   font-weight: 400;
   line-height: 1.45;
   text-align: left;
 }
-.section--polices .txt--bold, .section--links .txt--bold, .section--credits .txt--bold {
+.section--polices .txt--bold, .section--links .txt--bold, .section--credits .txt--bold, .section--video .txt--bold {
   font-weight: 500;
 }
-.section--polices .txt--little, .section--links .txt--little, .section--credits .txt--little {
+.section--polices .txt--little, .section--links .txt--little, .section--credits .txt--little, .section--video .txt--little {
   font-size: var(--textlittle);
   margin-top: 0.5em;
   margin-bottom: 0em;
 }
-.section--polices .author, .section--links .author, .section--credits .author {
+.section--polices .author, .section--links .author, .section--credits .author, .section--video .author {
   text-align: left;
 }
-.section--polices .pdvisible, .section--polices .dvisible, .section--polices .dvisible-s, .section--links .pdvisible, .section--links .dvisible, .section--links .dvisible-s, .section--credits .pdvisible, .section--credits .dvisible, .section--credits .dvisible-s {
+.section--polices .pdvisible, .section--polices .dvisible, .section--polices .dvisible-s, .section--links .pdvisible, .section--links .dvisible, .section--links .dvisible-s, .section--credits .pdvisible, .section--credits .dvisible, .section--credits .dvisible-s, .section--video .pdvisible, .section--video .dvisible, .section--video .dvisible-s {
   display: none;
 }
 @media (min-width: 1200px) {
-  .section--polices .mvisible, .section--links .mvisible, .section--credits .mvisible {
+  .section--polices .mvisible, .section--links .mvisible, .section--credits .mvisible, .section--video .mvisible {
     display: none;
   }
-  .section--polices .dvisible, .section--links .dvisible, .section--credits .dvisible {
+  .section--polices .dvisible, .section--links .dvisible, .section--credits .dvisible, .section--video .dvisible {
     display: block;
   }
 }
 @media (min-width: 1200px) {
-  .section--polices .pdvisible, .section--links .pdvisible, .section--credits .pdvisible {
+  .section--polices .pdvisible, .section--links .pdvisible, .section--credits .pdvisible, .section--video .pdvisible {
     display: block;
   }
-  .section--polices .dvisible-s, .section--links .dvisible-s, .section--credits .dvisible-s {
+  .section--polices .dvisible-s, .section--links .dvisible-s, .section--credits .dvisible-s, .section--video .dvisible-s {
     display: none;
   }
 }
 @media (min-width: 1450px) {
-  .section--polices .pdvisible, .section--links .pdvisible, .section--credits .pdvisible {
+  .section--polices .pdvisible, .section--links .pdvisible, .section--credits .pdvisible, .section--video .pdvisible {
     display: none;
   }
-  .section--polices .dvisible-s, .section--links .dvisible-s, .section--credits .dvisible-s {
+  .section--polices .dvisible-s, .section--links .dvisible-s, .section--credits .dvisible-s, .section--video .dvisible-s {
     display: block;
   }
 }
-.section--polices .diff-f, .section--links .diff-f, .section--credits .diff-f {
+.section--polices .diff-f, .section--links .diff-f, .section--credits .diff-f, .section--video .diff-f {
   font-family: "Caveat", cursive;
   font-weight: 400;
   font-style: normal;
@@ -1466,32 +1479,40 @@ details[open] summary::after {
   font-size: var(--text);
   line-height: 1.45;
 }
-.section--polices .diff-f--big, .section--links .diff-f--big, .section--credits .diff-f--big {
+.section--polices .diff-f--big, .section--links .diff-f--big, .section--credits .diff-f--big, .section--video .diff-f--big {
   font-size: var(--textbig);
   line-height: 1.3;
 }
-.section--polices .diff-f--vbig, .section--links .diff-f--vbig, .section--credits .diff-f--vbig {
+.section--polices .diff-f--vbig, .section--links .diff-f--vbig, .section--credits .diff-f--vbig, .section--video .diff-f--vbig {
   font-size: var(--subtitle);
   line-height: 1.3;
 }
-.section--polices .menu__el, .section--links .menu__el, .section--credits .menu__el {
+.section--polices .menu__el, .section--links .menu__el, .section--credits .menu__el, .section--video .menu__el {
   margin-bottom: 54px;
 }
 @media (min-width: 1024px) {
-  .section--polices .menu__el, .section--links .menu__el, .section--credits .menu__el {
+  .section--polices .menu__el, .section--links .menu__el, .section--credits .menu__el, .section--video .menu__el {
     margin-bottom: 88px;
   }
 }
-.section--polices ul li, .section--links ul li, .section--credits ul li {
+.section--polices ul li, .section--links ul li, .section--credits ul li, .section--video ul li {
   margin-top: 40px;
 }
-.section--polices ul li a, .section--links ul li a, .section--credits ul li a {
+.section--polices ul li a, .section--links ul li a, .section--credits ul li a, .section--video ul li a {
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
-.section--polices ul li a:hover, .section--links ul li a:hover, .section--credits ul li a:hover {
+.section--polices ul li a:hover, .section--links ul li a:hover, .section--credits ul li a:hover, .section--video ul li a:hover {
   color: #8C8C8C;
+}
+.section--polices .video-container, .section--links .video-container, .section--credits .video-container, .section--video .video-container {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section--polices .video-container iframe, .section--links .video-container iframe, .section--credits .video-container iframe, .section--video .video-container iframe {
+  border: none;
 }
 
 /* .section--links{

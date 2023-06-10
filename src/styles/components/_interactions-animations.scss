@@ -177,6 +177,20 @@ details{
       transform: rotate(45deg);
       transition: transform 0.3s ease-in-out;
     }
+    &[open] summary~*{
+      animation: sweep .1s ease-in-out;
+    }
+    @keyframes sweep {
+      0% {
+        opacity: 0;
+        margin-top: -10px
+      }
+    
+      100% {
+        opacity: 1;
+        margin-top: 0px
+      }
+    }
     @media (min-width: 1235px){
       summary{
         box-sizing: border-box;

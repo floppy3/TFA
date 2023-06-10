@@ -1,6 +1,6 @@
 @use '../utils/variables' as v;
 
-.section--polices, .section--links, .section--credits{
+.section--polices, .section--links, .section--credits, .section--video{
     .title{
         margin: 88px 0px 0px;
         padding: 0px;
@@ -121,6 +121,14 @@
                         color: $c-third;
                     }
             }
+        }
+    }
+
+    .video-container{
+        margin: 0 auto;
+        width: fit-content;
+        iframe{
+            border: none;
         }
     }
 }
